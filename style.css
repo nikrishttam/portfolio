@@ -1,0 +1,93 @@
+@font-face {
+  font-family: "Avenir";
+  src: url(./assets//fonts/Avenir-Book.ttf);
+}
+
+body {
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 16px;
+  font-family: Avenir;
+}
+
+.root .home {
+  background-image: url(./assets/images/bg1.jpg);
+  width: 100vw;
+  height: 830px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.root .home img {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+}
+
+.root .home div:nth-child(2) {
+  text-align: center;
+  font-size: 2em;
+  color: #e31c6d;
+  font-weight: bold;
+}
+
+.root .profile {
+  height: 200px;
+  width: 100%;
+  text-align: center;
+  vertical-align: middle;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.root .profile p {
+  width: 70%;
+}
+
+.root .projects {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.root .projects p {
+  width: 70%;
+}
+/*# sourceMappingURL=style.css.map */

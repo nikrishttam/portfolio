@@ -1,0 +1,58 @@
+@font-face {
+  font-family: "Avenir";
+  src: url(./assets//fonts/Avenir-Book.ttf);
+}
+body {
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: Avenir;
+}
+.root {
+  .home {
+    background-image: url(./assets/images/bg1.jpg);
+    width: 100vw;
+    height: 830px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .home img {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+  }
+  .home div:nth-child(2) {
+    text-align: center;
+    font-size: 2em;
+    color: #e31c6d;
+    font-weight: bold;
+  }
+  .profile {
+    height: 200px;
+    width: 100%;
+    text-align: center;
+    vertical-align: middle;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    p {
+      width: 70%;
+    }
+  }
+  .projects {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    p {
+      width: 70%;
+    }
+  }
+}
