@@ -5,12 +5,13 @@
 body {
   margin: 0;
   box-sizing: border-box;
-  font-size: 16px;
+  font-size: 14px;
   font-family: Avenir;
+  color: #3B6D53;
 }
 .root {
-  .home {
-    background-image: url(./assets/images/bg1.jpg);
+  header {
+    background-image: url(./assets/images/bg1.png);
     width: 100vw;
     height: 830px;
     background-attachment: fixed;
@@ -22,16 +23,15 @@ body {
     align-items: center;
     flex-direction: column;
   }
-  .home img {
+  header img {
     height: 150px;
     width: 150px;
     border-radius: 50%;
   }
-  .home div:nth-child(2) {
+  header div:nth-child(2) {
     text-align: center;
     font-size: 2em;
-    color: #e31c6d;
-    font-weight: bold;
+    color: #A6CCB8;
   }
   .profile {
     height: 200px;
@@ -53,6 +53,27 @@ body {
     align-items: center;
     p {
       width: 70%;
+    }
+  }
+  footer{
+    padding:1%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    i{
+      font-size: 1.5rem;
+      padding:1.5rem;
+      cursor: pointer;
+    }
+    a{
+      text-decoration:none;
+      color: black;
+    }
+    a:hover{
+     
+      i{
+        color: #677381;
+      }
     }
   }
 }

@@ -7,12 +7,13 @@ body {
   margin: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-size: 16px;
+  font-size: 14px;
   font-family: Avenir;
+  color: #3B6D53;
 }
 
-.root .home {
-  background-image: url(./assets/images/bg1.jpg);
+.root header {
+  background-image: url(./assets/images/bg1.png);
   width: 100vw;
   height: 830px;
   background-attachment: fixed;
@@ -34,17 +35,16 @@ body {
           flex-direction: column;
 }
 
-.root .home img {
+.root header img {
   height: 150px;
   width: 150px;
   border-radius: 50%;
 }
 
-.root .home div:nth-child(2) {
+.root header div:nth-child(2) {
   text-align: center;
   font-size: 2em;
-  color: #e31c6d;
-  font-weight: bold;
+  color: #A6CCB8;
 }
 
 .root .profile {
@@ -89,5 +89,33 @@ body {
 
 .root .projects p {
   width: 70%;
+}
+
+.root footer {
+  padding: 1%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.root footer i {
+  font-size: 1.5rem;
+  padding: 1.5rem;
+  cursor: pointer;
+}
+
+.root footer a {
+  text-decoration: none;
+  color: black;
+}
+
+.root footer a:hover i {
+  color: #677381;
 }
 /*# sourceMappingURL=style.css.map */
