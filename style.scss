@@ -13,7 +13,7 @@ body {
   header {
     background-image: url(./assets/images/bg1.png);
     width: 100vw;
-    height: 830px;
+    height: 100vh;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -30,31 +30,10 @@ body {
   }
   header div:nth-child(2) {
     text-align: center;
-    font-size: 2em;
+    font-size: 1.8em;
     color: #A6CCB8;
-  }
-  .profile {
-    height: 200px;
-    width: 100%;
-    text-align: center;
-    vertical-align: middle;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    p {
-      width: 70%;
-    }
-  }
-  .projects {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    p {
-      width: 70%;
-    }
-  }
+    padding: 2%;
+  } 
   footer{
     padding:1%;
     display: flex;
@@ -76,4 +55,47 @@ body {
       }
     }
   }
+  .profile{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 2%;
+  }
+  .skills{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 2%;
+    .skill-container{
+      display: flex;
+      width: 100%;
+      justify-content: space-evenly;
+      padding: 1%;
+      .name{
+        align-self: center;
+        width: 10%;
+      }
+
+    .value-container {
+      width: 80%;
+      background-color: #ddd;
+    }
+    
+    .value {
+      text-align: right;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      padding-right: 10px;
+      color: white;
+    }
+    }
+    
+    .javascript {width: 70%; background-color: #4CAF50;}
+    .java{width: 65%; background-color: #666AC6;}
+    .react {width: 70%; background-color: #66C6BF;}
+    .angular {width: 50%; background-color: #D265A0;}
+  }
+
 }
