@@ -9,7 +9,7 @@ body {
           box-sizing: border-box;
   font-size: 14px;
   font-family: Avenir;
-  color: #3B6D53;
+  color: #3b6d53;
 }
 
 .root header {
@@ -44,7 +44,7 @@ body {
 .root header div:nth-child(2) {
   text-align: center;
   font-size: 1.8em;
-  color: #A6CCB8;
+  color: #a6ccb8;
   padding: 2%;
 }
 
@@ -76,6 +76,40 @@ body {
   color: #677381;
 }
 
+.root label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 1%;
+  margin: 0px;
+}
+
+.root label h4 {
+  margin: 0px;
+  padding: 1%;
+}
+
+.root label .line-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.root label .line-container div {
+  width: 30px;
+  height: 2px;
+  background: #3b6d53;
+}
+
 .root .profile {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -90,7 +124,37 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 2%;
+  font-size: 1.1rem;
+}
+
+.root .projects div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.root .projects div img {
+  width: 300px;
+  height: 200px;
+}
+
+.root .projects div p {
+  padding: 10px;
+  font-size: 1.2rem;
+}
+
+.root .experiences .date-location {
+  font-style: italic;
 }
 
 .root .skills {
@@ -130,34 +194,54 @@ body {
 
 .root .skills .skill-container .value-container {
   width: 80%;
+  height: 20px;
   background-color: #ddd;
 }
 
 .root .skills .skill-container .value {
   text-align: right;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-right: 10px;
+  padding: 2px;
+  font-size: 0.8rem;
   color: white;
 }
 
 .root .skills .javascript {
   width: 70%;
-  background-color: #4CAF50;
+  height: 20px;
+  background-color: #4caf50;
 }
 
 .root .skills .java {
   width: 65%;
-  background-color: #666AC6;
+  height: 20px;
+  background-color: #666ac6;
 }
 
 .root .skills .react {
   width: 70%;
-  background-color: #66C6BF;
+  height: 20px;
+  background-color: #66c6bf;
 }
 
 .root .skills .angular {
   width: 50%;
-  background-color: #D265A0;
+  height: 20px;
+  background-color: #d265a0;
+}
+
+@media screen and (max-width: 550px) {
+  .root .skills .skill-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .root .skills .skill-container .value-container {
+    width: 100%;
+  }
+  .root .skills .skill-container .name {
+    width: 100%;
+    padding: 1%;
+  }
 }
 /*# sourceMappingURL=style.css.map */

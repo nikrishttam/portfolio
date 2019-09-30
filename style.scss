@@ -7,7 +7,7 @@ body {
   box-sizing: border-box;
   font-size: 14px;
   font-family: Avenir;
-  color: #3B6D53;
+  color: #3b6d53;
 }
 .root {
   header {
@@ -31,71 +31,143 @@ body {
   header div:nth-child(2) {
     text-align: center;
     font-size: 1.8em;
-    color: #A6CCB8;
+    color: #a6ccb8;
     padding: 2%;
-  } 
-  footer{
-    padding:1%;
+  }
+  footer {
+    padding: 1%;
     display: flex;
     justify-content: center;
     align-items: center;
-    i{
+    i {
       font-size: 1.5rem;
-      padding:1.5rem;
+      padding: 1.5rem;
       cursor: pointer;
     }
-    a{
-      text-decoration:none;
+    a {
+      text-decoration: none;
       color: black;
     }
-    a:hover{
-     
-      i{
+    a:hover {
+      i {
         color: #677381;
       }
     }
   }
-  .profile{
+  label{
     display: flex;
     justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    padding: 2%;
+    padding: 1%;
+    margin: 0px;
+    h4{
+      margin: 0px;
+      padding: 1%;
+    }
+    .line-container{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      div{
+        width: 30px;
+        height: 2px;
+        background: #3b6d53;
+      }
+    }
   }
-  .skills{
+  .profile {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.1rem;
+  }
+  .projects{
+    div{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      img{
+        width: 300px;
+        height: 200px;
+      }
+      p{
+        padding:10px;
+        font-size: 1.2rem;
+      }
+    }
+  }
+  .experiences{
+    .date-location{
+      font-style: italic;
+    }
+  }
+  .skills {
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
     padding: 2%;
-    .skill-container{
+    .skill-container {
       display: flex;
       width: 100%;
       justify-content: space-evenly;
       padding: 1%;
-      .name{
+      .name {
         align-self: center;
         width: 10%;
       }
 
-    .value-container {
-      width: 80%;
-      background-color: #ddd;
-    }
-    
-    .value {
-      text-align: right;
-      padding-top: 10px;
-      padding-bottom: 10px;
-      padding-right: 10px;
-      color: white;
-    }
-    }
-    
-    .javascript {width: 70%; background-color: #4CAF50;}
-    .java{width: 65%; background-color: #666AC6;}
-    .react {width: 70%; background-color: #66C6BF;}
-    .angular {width: 50%; background-color: #D265A0;}
-  }
+      .value-container {
+        width: 80%;
+        height: 20px;
+        background-color: #ddd;
+      }
 
+      .value {
+        text-align: right;
+        padding: 2px;
+        font-size: 0.8rem;
+        color: white;
+      }
+    }
+
+    .javascript {
+      width: 70%;
+      height: 20px;
+      background-color: #4caf50;
+    }
+    .java {
+      width: 65%;
+      height: 20px;
+      background-color: #666ac6;
+    }
+    .react {
+      width: 70%;
+      height: 20px;
+      background-color: #66c6bf;
+    }
+    .angular {
+      width: 50%;
+      height: 20px;
+      background-color: #d265a0;
+    }
+  }
+}
+@media screen and (max-width: 550px) {
+  .root {
+    .skills {
+      .skill-container {
+        flex-direction: column;
+        .value-container {
+          width: 100%;
+        }
+        .name{
+          width: 100%;
+          padding: 1%;
+        }
+      }
+      
+    }
+  }
 }
