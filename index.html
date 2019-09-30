@@ -41,8 +41,15 @@
       <div class="modal fade" id="resumeModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
           <div class="modal-dialog" role="document">
                <div class="modal-content">
+                  <div class="modal-header">
+                      <h5 class="modal-title">Résumé</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
                <div class="modal-body">
-              <object width="400" height="400" data="./assets/resume.pdf"></object>
+              <object width="400" height="400" data="./assets/resume.pdf"><p style="padding: 10px">Your web browser doesn't have a PDF plugin.
+                Instead you can <a href="./assets/resume.pdf" download="resume">click here</a> to download the PDF file.</p></object>
               </div>
               </div>
           </div>
@@ -54,12 +61,12 @@
             src="./assets/images/profile.jpg"
             alt="profile"
             class="header-anim"
-            data-delay="0.2s"
+            data-delay="0.9s"
           />
         </div>
-        <div class="header-anim" data-delay="0.7s">
+        <div class="header-anim" data-delay="0.9s">
           <p>Sarvottam Kumar</p>
-          <p>Software Engineer | Blockchain Explorer</p>
+          <p style="font-size:1.1rem;font-style:italic">Software Engineer | Blockchain Explorer</p>
         </div>
       </header>
       <label for="profile"
