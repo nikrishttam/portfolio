@@ -12,6 +12,35 @@ body {
   color: #3b6d53;
 }
 
+.root #resume-btn {
+  position: fixed;
+  font-size: 1.2rem;
+  top: 5%;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+  z-index: 2;
+}
+
+.root #resume-btn button {
+  background: #286b62;
+  color: white;
+  border: none;
+}
+
+.root #resumeModal object {
+  width: 100%;
+  height: 100%;
+}
+
+.root #resumeModal .modal-body {
+  padding: 0px;
+}
+
+.root #resumeModal .modal-content {
+  height: 100vh;
+}
+
 .root header {
   background-image: url(./assets/images/bg1.png);
   width: 100vw;
@@ -83,8 +112,11 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 1%;
   margin: 0px;
+  font-size: 2rem;
+  color: black;
+  background-image: -webkit-gradient(linear, left top, right top, from(#098575), to(#a5cab7));
+  background-image: linear-gradient(to right, #098575, #a5cab7);
 }
 
 .root label h4 {
@@ -107,7 +139,7 @@ body {
 .root label .line-container div {
   width: 30px;
   height: 2px;
-  background: #3b6d53;
+  background: black;
 }
 
 .root .profile {
@@ -125,6 +157,17 @@ body {
       -ms-flex-align: center;
           align-items: center;
   font-size: 1.1rem;
+}
+
+.root .projects {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
 .root .projects div {
@@ -151,6 +194,16 @@ body {
 .root .projects div p {
   padding: 10px;
   font-size: 1.2rem;
+}
+
+.root .experiences {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 .root .experiences .date-location {

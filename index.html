@@ -6,12 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Sarvottam Kumar</title>
     <link rel="icon" href="./assets//images/profile.jpg" type="image/x-icon" />
-    <link rel="stylesheet" href="./assets/lib/bootstrap/css/bootstrap.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="./assets/lib/animate.css" />
     <link href="./assets/lib/fontawesome/css/all.css" rel="stylesheet" />
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./style.css" /><script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script
+    <!-- <script
       async
       src="https://www.googletagmanager.com/gtag/js?id=UA-148987382-1"
     ></script>
@@ -23,10 +25,29 @@
       gtag("js", new Date());
 
       gtag("config", "UA-148987382-1");
-    </script>
+    </script> -->
   </head>
   <body>
     <div class="root">
+      <!-- Resume -->
+      <div id="resume-btn">
+        <div class="animated infinite swing">
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#resumeModal">
+            Résumé
+          </button>
+        </div>
+      </div>
+      <!-- Resume Modal -->
+      <div class="modal fade" id="resumeModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+               <div class="modal-content">
+               <div class="modal-body">
+              <object width="400" height="400" data="./assets/resume.pdf"></object>
+              </div>
+              </div>
+          </div>
+      </div>
+      <!-- Resume -->
       <header>
         <div>
           <img
@@ -57,8 +78,8 @@
         <h4>Projects</h4>
         <div class="line-container"><div></div></div
       ></label>
-      <div class="projects row">
-        <div class="col-lg col-md-6 col-sm-12">
+      <div class="projects p-4">
+        <div>
           <img
             src="./assets/images/projects/project-1.png"
             class="img-fluid img-thumbnail"
@@ -66,7 +87,7 @@
           />
           <p>RetinoSkin</p>
         </div>
-        <div class="col-lg col-md-6 col-sm-12">
+        <div>
           <img
             src="./assets/images/projects/project-2.png"
             class="img-fluid img-thumbnail"
@@ -74,7 +95,7 @@
           />
           <p>Offiper</p>
         </div>
-        <div class="col-lg col-md-6 col-sm-12">
+        <div>
           <img
             src="./assets/images/projects/project-3.png"
             class="img-fluid img-thumbnail"
@@ -88,8 +109,8 @@
         <h4>Experiences</h4>
         <div class="line-container"><div></div></div
       ></label>
-      <div class="experiences row">
-        <div class="col-lg col-sm-12 p-4">
+      <div class="experiences">
+        <div class="p-4">
           <div class="col">
             <h5>Victorious Publishers | Typsetter, DTP</h5>
             <p class="date-location">April - August 2015 <span style="float: right"> Laxmi Nagar, Delhi</p>
@@ -99,7 +120,7 @@
           <div class="col"> <h5>Indian Post | Branch Post Master (BPM)</h5>
             <p class="date-location">Feb - May 2019<span style="float: right"> Seoni, Madhya Pradesh</p></div>
         </div>
-        <div class="col-lg col-sm-12 p-4">
+        <div class="p-4">
           <div class="col"> <h5>2626 Creative Studio | Web Developer Intern</h5>
             <p class="date-location">June - July 2019 <span style="float: right">Chattarpur, Delhi</p></div>
           <div class="col"> <h5>Accordify Solutions | Front End Developer</h5>
@@ -114,26 +135,26 @@
       <div class="skills">
         <div class="skill-container">
           <div class="name">Javascript</div>
-          <div class="value-container">
-            <div class="value javascript">90%</div>
+          <div class="value-container animated slideInLeft">
+            <div class="value javascript animated slideInLeft slow">90%</div>
           </div>
         </div>
         <div class="skill-container">
           <div class="name">Java</div>
-          <div class="value-container">
-            <div class="value java">65%</div>
+          <div class="value-container animated slideInLeft">
+            <div class="value java animated slideInLeft slow">65%</div>
           </div>
         </div>
         <div class="skill-container">
           <div class="name">React</div>
-          <div class="value-container">
-            <div class="value react">70%</div>
+          <div class="value-container animated slideInLeft">
+            <div class="value react animated slideInLeft slow">70%</div>
           </div>
         </div>
         <div class="skill-container">
           <div class="name">Angular</div>
-          <div class="value-container">
-            <div class="value angular">50%</div>
+          <div class="value-container animated slideInLeft">
+            <div class="value angular animated slideInLeft slow">50%</div>
           </div>
         </div>
       </div>

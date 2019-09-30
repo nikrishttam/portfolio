@@ -10,6 +10,31 @@ body {
   color: #3b6d53;
 }
 .root {
+  #resume-btn {
+    position: fixed;
+    font-size: 1.2rem;
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    z-index: 2;
+    button {
+      background: rgb(40, 107, 98);
+      color: white;
+      border: none;
+    }
+  }
+  #resumeModal {
+    object {
+      width: 100%;
+      height: 100%;
+    }
+    .modal-body {
+      padding: 0px;
+    }
+    .modal-content {
+      height: 100vh;
+    }
+  }
   header {
     background-image: url(./assets/images/bg1.png);
     width: 100vw;
@@ -54,23 +79,25 @@ body {
       }
     }
   }
-  label{
+  label {
     display: flex;
     justify-content: center;
-    padding: 1%;
     margin: 0px;
-    h4{
+    font-size: 2rem;
+    color: black;
+    background-image: linear-gradient(to right, #098575, #a5cab7);
+    h4 {
       margin: 0px;
       padding: 1%;
     }
-    .line-container{
+    .line-container {
       display: flex;
       justify-content: center;
       align-items: center;
-      div{
+      div {
         width: 30px;
         height: 2px;
-        background: #3b6d53;
+        background: black;
       }
     }
   }
@@ -81,24 +108,30 @@ body {
     align-items: center;
     font-size: 1.1rem;
   }
-  .projects{
-    div{
+  .projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    div {
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      img{
+      img {
         width: 300px;
         height: 200px;
       }
-      p{
-        padding:10px;
+      p {
+        padding: 10px;
         font-size: 1.2rem;
       }
     }
   }
-  .experiences{
-    .date-location{
+  .experiences {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    .date-location {
       font-style: italic;
     }
   }
@@ -162,12 +195,11 @@ body {
         .value-container {
           width: 100%;
         }
-        .name{
+        .name {
           width: 100%;
           padding: 1%;
         }
       }
-      
     }
   }
 }
