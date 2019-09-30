@@ -53,10 +53,11 @@
           <img
             src="./assets/images/profile.jpg"
             alt="profile"
-            class="animated rollIn slower delay-1s"
+            class="header-anim"
+            data-delay="0.2s"
           />
         </div>
-        <div class="animated fadeInUp slow delay-1s">
+        <div class="header-anim" data-delay="0.7s">
           <p>Sarvottam Kumar</p>
           <p>Software Engineer | Blockchain Explorer</p>
         </div>
@@ -79,7 +80,7 @@
         <div class="line-container"><div></div></div
       ></label>
       <div class="projects p-4">
-        <div>
+        <div class="project-anim" data-delay="0s">
           <img
             src="./assets/images/projects/project-1.png"
             class="img-fluid img-thumbnail"
@@ -87,7 +88,7 @@
           />
           <p>RetinoSkin</p>
         </div>
-        <div>
+        <div class="project-anim" data-delay="0.5s">
           <img
             src="./assets/images/projects/project-2.png"
             class="img-fluid img-thumbnail"
@@ -95,7 +96,7 @@
           />
           <p>Offiper</p>
         </div>
-        <div>
+        <div class="project-anim" data-delay="0.7s">
           <img
             src="./assets/images/projects/project-3.png"
             class="img-fluid img-thumbnail"
@@ -111,19 +112,19 @@
       ></label>
       <div class="experiences">
         <div class="p-4">
-          <div class="col">
+          <div class="col exp-anim" data-delay="0.1s">
             <h5>Victorious Publishers | Typsetter, DTP</h5>
             <p class="date-location">April - August 2015 <span style="float: right"> Laxmi Nagar, Delhi</p>
           </div>
-          <div class="col"> <h5>Josh Talks | Volunteer</h5>
+          <div class="col exp-anim" data-delay="0.3s"> <h5>Josh Talks | Volunteer</h5>
             <p class="date-location">October 2018 <span style="float: right"> Gurugram, Haryana</p></div>
-          <div class="col"> <h5>Indian Post | Branch Post Master (BPM)</h5>
+          <div class="col exp-anim" data-delay="0.5s"> <h5>Indian Post | Branch Post Master (BPM)</h5>
             <p class="date-location">Feb - May 2019<span style="float: right"> Seoni, Madhya Pradesh</p></div>
         </div>
         <div class="p-4">
-          <div class="col"> <h5>2626 Creative Studio | Web Developer Intern</h5>
-            <p class="date-location">June - July 2019 <span style="float: right">Chattarpur, Delhi</p></div>
-          <div class="col"> <h5>Accordify Solutions | Front End Developer</h5>
+          <div class="col exp-anim" data-delay="0.7s"> <h5>2626 Creative Studio | Web Developer Intern</h5>
+            <p class="date-location exp-anim">June - July 2019 <span style="float: right">Chattarpur, Delhi</p></div>
+          <div class="col exp-anim" data-delay="0.9s"> <h5>Accordify Solutions | Front End Developer</h5>
             <p class="date-location">August - Current 2019 <span style="float: right"> Delhi</p></div>
         </div>
       </div>
@@ -135,43 +136,126 @@
       <div class="skills">
         <div class="skill-container">
           <div class="name">Javascript</div>
-          <div class="value-container animated slideInLeft">
-            <div class="value javascript animated slideInLeft slow">90%</div>
+          <div class="value-container skill-anim" data-delay="0s">
+            <div class="value javascript skill-anim" data-delay="0.3s">90%</div>
           </div>
         </div>
         <div class="skill-container">
           <div class="name">Java</div>
-          <div class="value-container animated slideInLeft">
-            <div class="value java animated slideInLeft slow">65%</div>
+          <div class="value-container skill-anim" data-delay="0s">
+            <div class="value java skill-anim" data-delay="0.3s">65%</div>
           </div>
         </div>
         <div class="skill-container">
           <div class="name">React</div>
-          <div class="value-container animated slideInLeft">
-            <div class="value react animated slideInLeft slow">70%</div>
+          <div class="value-container skill-anim" data-delay="0s">
+            <div class="value react skill-anim" data-delay="0.3s">70%</div>
           </div>
         </div>
         <div class="skill-container">
           <div class="name">Angular</div>
-          <div class="value-container animated slideInLeft">
-            <div class="value angular animated slideInLeft slow">50%</div>
+          <div class="value-container skill-anim" data-delay="0s">
+            <div class="value angular skill-anim" data-delay="0.3s">50%</div>
           </div>
         </div>
       </div>
       <footer>
-        <a href="https://www.facebook.com/sarru1289" target="_blank"
+        <a href="https://www.facebook.com/sarru1289" target="_blank" class="social-anim" data-delay="0.2s"
           ><i class="fab fa-facebook"></i
         ></a>
-        <a href="https://twitter.com/sarru1291" target="_blank"
+        <a href="https://twitter.com/sarru1291" target="_blank" class="social-anim" data-delay="0.2s"
           ><i class="fab fa-twitter"></i
         ></a>
-        <a href="https://github.com/sarru1291" target="_blank"
+        <a href="https://github.com/sarru1291" target="_blank" class="social-anim" data-delay="0.2s"
           ><i class="fab fa-github"></i
         ></a>
-        <a href="https://bufferfly.in" target="_blank"
+        <a href="https://bufferfly.in" target="_blank" class="social-anim" data-delay="0.2s"
           ><i class="fa fa-blog"></i
         ></a>
       </footer>
     </div>
+
+    <script>
+// project animation
+      let project_images=document.querySelectorAll('.project-anim');
+      observer=new IntersectionObserver((entries)=>{
+        console.log(entries);
+        entries.forEach((entry)=>{
+
+          if(entry.intersectionRatio>0){
+            entry.target.style.animation=`anim1 1.5s ${entry.target.dataset.delay} forwards ease-out`;
+            }else{
+              entry.target.style.animation=`none`;
+            }
+          })
+      })
+      project_images.forEach((image)=>{
+        observer.observe(image)
+      })
+// header animation
+      let header_content=document.querySelectorAll('.header-anim');
+      observer=new IntersectionObserver((entries)=>{
+        console.log(entries);
+        entries.forEach((entry)=>{
+
+          if(entry.intersectionRatio>0){
+            entry.target.style.animation=`anim1 1.5s ${entry.target.dataset.delay} forwards ease-out`;
+            }else{
+              entry.target.style.animation=`none`;
+            }
+          })
+      })
+      header_content.forEach((content)=>{
+        observer.observe(content)
+      })
+// experience animation
+      let exp_content=document.querySelectorAll('.exp-anim');
+      observer=new IntersectionObserver((entries)=>{
+        console.log(entries);
+        entries.forEach((entry)=>{
+
+          if(entry.intersectionRatio>0){
+            entry.target.style.animation=`anim1 1.5s ${entry.target.dataset.delay} forwards ease-out`;
+            }else{
+              entry.target.style.animation=`none`;
+            }
+          })
+      })
+      exp_content.forEach((content)=>{
+        observer.observe(content)
+      })
+// skill animation
+let skill_content=document.querySelectorAll('.skill-anim');
+      observer=new IntersectionObserver((entries)=>{
+        console.log(entries);
+        entries.forEach((entry)=>{
+
+          if(entry.intersectionRatio>0){
+            entry.target.style.animation=`anim1 1.5s ${entry.target.dataset.delay} forwards ease-out`;
+            }else{
+              entry.target.style.animation=`none`;
+            }
+          })
+      })
+      skill_content.forEach((content)=>{
+        observer.observe(content)
+      })
+// social links animation
+let social_links=document.querySelectorAll('.social-anim');
+      observer=new IntersectionObserver((entries)=>{
+        console.log(entries);
+        entries.forEach((entry)=>{
+
+          if(entry.intersectionRatio>0){
+            entry.target.style.animation=`social-anim1 1.5s ${entry.target.dataset.delay} forwards ease-out`;
+            }else{
+              entry.target.style.animation=`none`;
+            }
+          })
+      })
+      social_links.forEach((link)=>{
+        observer.observe(link)
+      })
+    </script>
   </body>
 </html>

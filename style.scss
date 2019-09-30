@@ -187,6 +187,38 @@ body {
     }
   }
 }
+.project-anim{
+  opacity:0;
+}
+.header-anim{
+  opacity: 0;
+}
+.exp-anim{
+  opacity: 0;
+}
+.skill-anim{
+  opacity: 0;
+}
+@keyframes anim1{
+  from{
+    transform: translateX(-100px);
+    opacity:0;
+  }
+  to{
+    transform: translateX(0);
+    opacity:1;
+  }
+}
+@keyframes social-anim1{
+  from{
+    transform: rotateY(180deg);
+    opacity:0;
+  }
+  to{
+    transform: rotateY(0deg);
+    opacity:1;
+  }
+}
 @media screen and (max-width: 550px) {
   .root {
     .skills {
