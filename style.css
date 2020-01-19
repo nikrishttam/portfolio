@@ -42,7 +42,7 @@ body {
 }
 
 .root header {
-  background-image: url(./assets/images/bg1.png);
+  background-image: url(./assets/images/bg1.jpg);
   width: 100vw;
   height: 100vh;
   background-attachment: fixed;
@@ -271,7 +271,7 @@ body {
 }
 
 .root .skills .react {
-  width: 70%;
+  width: 80%;
   height: 20px;
   background-color: #66c6bf;
 }
@@ -280,6 +280,16 @@ body {
   width: 50%;
   height: 20px;
   background-color: #d265a0;
+}
+.root .skills .linux {
+  width: 70%;
+  height: 20px;
+  background-color: #4185a5;
+}
+.root .skills .node {
+  width: 50%;
+  height: 20px;
+  background-color: #d2a365;
 }
 
 .project-anim {

@@ -31,7 +31,7 @@
     <div class="root">
       <!-- Resume -->
       <div id="resume-btn">
-        <div class="animated infinite swing">
+        <div>
           <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#resumeModal">
             Résumé
           </button>
@@ -66,7 +66,7 @@
         </div>
         <div class="header-anim" data-delay="0.9s">
           <p>Sarvottam Kumar</p>
-          <p style="font-size:1.1rem;font-style:italic">Software Engineer | Blockchain Explorer</p>
+          <p style="font-size:1.1rem;font-style:italic">Software Engineer | Writer | Blockchain Explorer</p>
         </div>
       </header>
       <label for="profile"
@@ -76,9 +76,7 @@
       ></label>
       <div class="profile">
         <p class="p-3">
-          Self-learner, Software Engineer and Explorer of Blockchain Technology
-          who believe in smart work, collaboration and contribution for the
-          advancement of human kind.
+          Self-learner, Software Engineer, Writer and Explorer of Blockchain Technology who believe in smart work, collaboration and contribution toward the advancement of human kind.
         </p>
       </div>
       <label for="projects"
@@ -86,8 +84,9 @@
         <h4>Projects</h4>
         <div class="line-container"><div></div></div
       ></label>
-      <div class="projects p-4">
-        <div class="project-anim" data-delay="0s">
+      <div class="projects p-4" style="display:block;text-align:center">
+       Click <a href="https://github.com/sarru1291" target="_blank">here</a> to see my all projects.
+        <!-- <div class="project-anim" data-delay="0s">
           <img
             src="./assets/images/projects/project-1.png"
             class="img-fluid img-thumbnail"
@@ -110,8 +109,8 @@
             alt="project3"
           />
           <p>Victorious Publishers</p>
-        </div>
-      </div>
+        </div> -->
+      </div> 
       <label for="experiences"
         ><div class="line-container"><div></div></div>
         <h4>Experiences</h4>
@@ -129,11 +128,18 @@
             <p class="date-location">Feb - May 2019<span style="float: right"> Seoni, Madhya Pradesh</p></div>
         </div>
         <div class="p-4">
-          <div class="col exp-anim" data-delay="0.7s"> <h5>2626 Creative Studio | Web Developer Intern</h5>
-            <p class="date-location exp-anim">June - July 2019 <span style="float: right">Chattarpur, Delhi</p></div>
-          <div class="col exp-anim" data-delay="0.9s"> <h5>Accordify Solutions | Front End Developer</h5>
-            <p class="date-location">August - Current 2019 <span style="float: right"> Delhi</p></div>
+          <div class="col exp-anim" data-delay="0.5s"> 
+            <h5>2626 Creative Studio | Web Developer Intern</h5>
+            <p class="date-location">June - July 2019 <span style="float: right">Chattarpur, Delhi</p>
+            </div>
+          <div class="col exp-anim" data-delay="0.7s"> <h5>Accordify Solutions | Front End Developer</h5>
+            <p class="date-location">August - Current 2019 <span style="float: right"> Gwalior, MP</p></div>
+              <div class="col exp-anim" data-delay="0.9s">
+                <h5>Fossbytes | Intern Writer</h5>
+                <p class="date-location">January - Till Now 2020 <span style="float: right">Noida, UP</p>
+              </div>
         </div>
+       
       </div>
       <label for="skills"
         ><div class="line-container"><div></div></div>
@@ -144,7 +150,7 @@
         <div class="skill-container">
           <div class="name">Javascript</div>
           <div class="value-container skill-anim" data-delay="0s">
-            <div class="value javascript skill-anim" data-delay="0.3s">90%</div>
+            <div class="value javascript skill-anim" data-delay="0.3s">70%</div>
           </div>
         </div>
         <div class="skill-container">
@@ -156,13 +162,25 @@
         <div class="skill-container">
           <div class="name">React</div>
           <div class="value-container skill-anim" data-delay="0s">
-            <div class="value react skill-anim" data-delay="0.3s">70%</div>
+            <div class="value react skill-anim" data-delay="0.3s">80%</div>
           </div>
         </div>
         <div class="skill-container">
           <div class="name">Angular</div>
           <div class="value-container skill-anim" data-delay="0s">
             <div class="value angular skill-anim" data-delay="0.3s">50%</div>
+          </div>
+        </div>
+        <div class="skill-container">
+          <div class="name">Node</div>
+          <div class="value-container skill-anim" data-delay="0s">
+            <div class="value node skill-anim" data-delay="0.3s">50%</div>
+          </div>
+        </div>
+        <div class="skill-container">
+          <div class="name">Linux</div>
+          <div class="value-container skill-anim" data-delay="0s">
+            <div class="value linux skill-anim" data-delay="0.3s">70%</div>
           </div>
         </div>
       </div>
@@ -176,9 +194,9 @@
         <a href="https://github.com/sarru1291" target="_blank" class="social-anim" data-delay="0.2s"
           ><i class="fab fa-github"></i
         ></a>
-        <a href="https://bufferfly.in" target="_blank" class="social-anim" data-delay="0.2s"
+        <!-- <a href="https://bufferfly.in" target="_blank" class="social-anim" data-delay="0.2s"
           ><i class="fa fa-blog"></i
-        ></a>
+        ></a> -->
       </footer>
     </div>
 
@@ -234,7 +252,7 @@
 // skill animation
 let skill_content=document.querySelectorAll('.skill-anim');
       observer=new IntersectionObserver((entries)=>{
-        console.log(entries);
+        // console.log(entries);
         entries.forEach((entry)=>{
 
           if(entry.intersectionRatio>0){
