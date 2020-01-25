@@ -157,6 +157,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   font-size: 1.1rem;
+  padding: 10px;
 }
 
 .root .projects {
