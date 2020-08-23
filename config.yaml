@@ -3,6 +3,9 @@ languageCode: en-us
 title: "Toha"
 theme: "toha"
 
+publishDir: docs
+
+
 # Allow raw html in markdown file
 markup:
   goldmark:
