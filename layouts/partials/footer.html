@@ -1,0 +1,74 @@
+<footer class="container-fluid footer pb-2">
+    <!-- <div class="container pt-5">
+        <div class="row text-center">
+            <div class="col-md-6 col-sm-12">
+                <h5>Navigation</h5>
+                {{ if .Site.Data.sections }}
+                <ul>
+                    {{- range sort .Site.Data.sections "section.weight" }}
+                    {{ if and (.section.enable) (.section.showOnNavbar)}}
+                    <li class="nav-item">
+                        <a class="smooth-scroll"
+                            href="/#{{ replace (lower .section.name) " " "-" }}">{{ .section.name }}</a>
+                    </li>
+                    {{ end }}
+                    {{- end }}
+                </ul>
+                {{ end }}
+
+            </div>
+            <div class="col-md-6 col-sm-12">
+                <h5>Contact Me</h5>
+                <ul>
+                    {{ range $key,$value:=.Site.Params.author.contactInfo }}
+                    <li><span>{{ title $key }}: </span> <span>{{ $value }}</span></li>
+                    {{ end }}
+                </ul>
+            </div>
+            {{ if .Site.Params.newsletter.enable }}
+            <div class="col-md-4 col-sm-12">
+                <h5>Newsletter</h5>
+                <p>Stay up to date with email notification</p>
+                <form>
+                    <div class="form-group">
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                            placeholder="Enter email" />
+                        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                            else.</small>
+                    </div>
+                    <button type="submit" class="btn btn-info">Submit</button>
+                </form>
+            </div>
+            {{ end }}
+        </div>
+    </div> -->
+    <hr />
+    <div class="container text-center">
+        <div class="row">
+            <!-- <div class="col-md-4">
+                <a id="theme" href="https://github.com/hossainemruz/toha" target="#">
+                    <img src="/assets/images/inverted-logo.png">
+                    Toha
+                </a>
+            </div> -->
+        
+            <div class="col-md-12 col-sm-12">Sarvottam Kumar {{ if .Site.Params.copyright }}{{ .Site.Params.copyright }}{{ else }}©
+                2020 Copyright.{{ end }}</div>
+            <!-- <div class="col-md-4 text-right">
+                <a id="hugo" href="https://gohugo.io/">Powered by Hugo
+                    <img src="/assets/images/hugo-logo-wide.svg" alt="Hugo Logo" height="18" />
+                </a>
+            </div> -->
+
+            <!-- <div class="col-md-6 col-sm-12 "> -->
+             <!-- Contact me:  -->
+            <!-- <a href="whatsapp://{{.Site.Params.author.ContactInfo.phone}}" target="_blank"><img src="assets/images/social/whatsapp.png" alt="facebook" style="height: 24px;width: 24px;"></a>
+            <a href="mailto:{{.Site.Params.author.ContactInfo.email}}" target="_blank"><img src="assets/images/social/gmail.png" alt="facebook" style="height: 24px;width: 24px;"></a>
+                <a href="{{.Site.Params.author.ContactInfo.facebook}}" target="_blank"><img src="assets/images/social/facebook.png" alt="facebook" style="height: 24px;width: 24px;"></a>
+                <a href="{{.Site.Params.author.ContactInfo.twitter}}" target="_blank"><img src="assets/images/social/twitter.png" alt="twitter" style="height: 24px;width: 24px;"></a> -->
+                
+            
+            <!-- </div> -->
+        </div>
+    </div>
+</footer>
