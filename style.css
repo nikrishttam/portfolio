@@ -1,0 +1,379 @@
+@font-face {
+  font-family: "Avenir";
+  src: url(./assets//fonts/Avenir-Book.ttf);
+}
+
+body {
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 14px;
+  font-family: Avenir;
+  color: #3b6d53;
+}
+
+.root #resume-btn {
+  position: fixed;
+  font-size: 1.2rem;
+  top: 5%;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+  z-index: 2;
+}
+
+.root #resume-btn button {
+  background: #286b62;
+  color: white;
+  border: none;
+}
+
+.root #resumeModal object {
+  width: 100%;
+  height: 100%;
+}
+
+.root #resumeModal .modal-body {
+  padding: 0px;
+}
+
+.root #resumeModal .modal-content {
+  height: 100vh;
+}
+
+.root header {
+  background-image: url(./assets/images/bg1.jpg);
+  width: 100vw;
+  height: 100vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.root header img {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+}
+
+.root header div:nth-child(2) {
+  text-align: center;
+  font-size: 1.8em;
+  color: #a6ccb8;
+  padding: 2%;
+}
+
+.root footer {
+  padding: 1%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.root footer i {
+  font-size: 1.5rem;
+  padding: 1.5rem;
+  cursor: pointer;
+}
+
+.root footer a {
+  text-decoration: none;
+  color: black;
+}
+
+.root footer a:hover i {
+  color: #677381;
+}
+
+.root label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0px;
+  font-size: 2rem;
+  color: black;
+  background-image: -webkit-gradient(linear, left top, right top, from(#098575), to(#a5cab7));
+  background-image: linear-gradient(to right, #098575, #a5cab7);
+}
+
+.root label h4 {
+  margin: 0px;
+  padding: 1%;
+}
+
+.root label .line-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.root label .line-container div {
+  width: 30px;
+  height: 2px;
+  background: black;
+}
+
+.root .profile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1.1rem;
+  padding: 10px;
+}
+
+.root .projects {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.root .projects div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.root .projects div img {
+  width: 300px;
+  height: 200px;
+}
+
+.root .projects div p {
+  padding: 10px;
+  font-size: 1.2rem;
+}
+
+.root .experiences {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.root .experiences .date-location {
+  font-style: italic;
+}
+
+.root .skills {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2%;
+}
+
+.root .skills .skill-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding: 1%;
+}
+
+.root .skills .skill-container .name {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  width: 10%;
+}
+
+.root .skills .skill-container .value-container {
+  width: 80%;
+  height: 20px;
+  background-color: #ddd;
+}
+
+.root .skills .skill-container .value {
+  text-align: right;
+  padding: 2px;
+  font-size: 0.8rem;
+  color: white;
+}
+
+.root .skills .javascript {
+  width: 70%;
+  height: 20px;
+  background-color: #4caf50;
+}
+
+.root .skills .java {
+  width: 65%;
+  height: 20px;
+  background-color: #666ac6;
+}
+
+.root .skills .react {
+  width: 80%;
+  height: 20px;
+  background-color: #66c6bf;
+}
+
+.root .skills .angular {
+  width: 50%;
+  height: 20px;
+  background-color: #d265a0;
+}
+.root .skills .linux {
+  width: 70%;
+  height: 20px;
+  background-color: #4185a5;
+}
+.root .skills .node {
+  width: 50%;
+  height: 20px;
+  background-color: #d2a365;
+}
+
+.project-anim {
+  opacity: 0;
+}
+
+.header-anim {
+  opacity: 0;
+}
+
+.exp-anim {
+  opacity: 0;
+}
+
+.skill-anim {
+  opacity: 0;
+}
+
+@-webkit-keyframes anim1 {
+  from {
+    -webkit-transform: translateX(-100px);
+            transform: translateX(-100px);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes anim1 {
+  from {
+    -webkit-transform: translateX(-100px);
+            transform: translateX(-100px);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes social-anim1 {
+  from {
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+    opacity: 1;
+  }
+}
+
+@keyframes social-anim1 {
+  from {
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .root .skills .skill-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .root .skills .skill-container .value-container {
+    width: 100%;
+  }
+  .root .skills .skill-container .name {
+    width: 100%;
+    padding: 1%;
+  }
+}
+/*# sourceMappingURL=style.css.map */

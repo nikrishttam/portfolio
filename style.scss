@@ -1,0 +1,237 @@
+@font-face {
+  font-family: "Avenir";
+  src: url(./assets//fonts/Avenir-Book.ttf);
+}
+body {
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 14px;
+  font-family: Avenir;
+  color: #3b6d53;
+}
+.root {
+  #resume-btn {
+    position: fixed;
+    font-size: 1.2rem;
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    z-index: 2;
+    button {
+      background: rgb(40, 107, 98);
+      color: white;
+      border: none;
+    }
+  }
+  #resumeModal {
+    object {
+      width: 100%;
+      height: 100%;
+    }
+    .modal-body {
+      padding: 0px;
+    }
+    .modal-content {
+      height: 100vh;
+    }
+  }
+  header {
+    background-image: url(./assets/images/bg1.png);
+    width: 100vw;
+    height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  header img {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+  }
+  header div:nth-child(2) {
+    text-align: center;
+    font-size: 1.8em;
+    color: #a6ccb8;
+    padding: 2%;
+  }
+  footer {
+    padding: 1%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    i {
+      font-size: 1.5rem;
+      padding: 1.5rem;
+      cursor: pointer;
+    }
+    a {
+      text-decoration: none;
+      color: black;
+    }
+    a:hover {
+      i {
+        color: #677381;
+      }
+    }
+  }
+  label {
+    display: flex;
+    justify-content: center;
+    margin: 0px;
+    font-size: 2rem;
+    color: black;
+    background-image: linear-gradient(to right, #098575, #a5cab7);
+    h4 {
+      margin: 0px;
+      padding: 1%;
+    }
+    .line-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      div {
+        width: 30px;
+        height: 2px;
+        background: black;
+      }
+    }
+  }
+  .profile {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.1rem;
+  }
+  .projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    div {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      img {
+        width: 300px;
+        height: 200px;
+      }
+      p {
+        padding: 10px;
+        font-size: 1.2rem;
+      }
+    }
+  }
+  .experiences {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    .date-location {
+      font-style: italic;
+    }
+  }
+  .skills {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 2%;
+    .skill-container {
+      display: flex;
+      width: 100%;
+      justify-content: space-evenly;
+      padding: 1%;
+      .name {
+        align-self: center;
+        width: 10%;
+      }
+
+      .value-container {
+        width: 80%;
+        height: 20px;
+        background-color: #ddd;
+      }
+
+      .value {
+        text-align: right;
+        padding: 2px;
+        font-size: 0.8rem;
+        color: white;
+      }
+    }
+
+    .javascript {
+      width: 70%;
+      height: 20px;
+      background-color: #4caf50;
+    }
+    .java {
+      width: 65%;
+      height: 20px;
+      background-color: #666ac6;
+    }
+    .react {
+      width: 70%;
+      height: 20px;
+      background-color: #66c6bf;
+    }
+    .angular {
+      width: 50%;
+      height: 20px;
+      background-color: #d265a0;
+    }
+  }
+}
+.project-anim{
+  opacity:0;
+}
+.header-anim{
+  opacity: 0;
+}
+.exp-anim{
+  opacity: 0;
+}
+.skill-anim{
+  opacity: 0;
+}
+@keyframes anim1{
+  from{
+    transform: translateX(-100px);
+    opacity:0;
+  }
+  to{
+    transform: translateX(0);
+    opacity:1;
+  }
+}
+@keyframes social-anim1{
+  from{
+    transform: rotateY(180deg);
+    opacity:0;
+  }
+  to{
+    transform: rotateY(0deg);
+    opacity:1;
+  }
+}
+@media screen and (max-width: 550px) {
+  .root {
+    .skills {
+      .skill-container {
+        flex-direction: column;
+        .value-container {
+          width: 100%;
+        }
+        .name {
+          width: 100%;
+          padding: 1%;
+        }
+      }
+    }
+  }
+}
