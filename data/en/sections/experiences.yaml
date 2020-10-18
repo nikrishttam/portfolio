@@ -1,0 +1,81 @@
+# section information
+section:
+  name: Experiences
+  id: experiences
+  enable: true
+  weight: 3
+  showOnNavbar: true
+  # Can optionally hide the title in sections
+  # hideTitle: true 
+
+# Your experiences
+experiences:
+- company:
+    name: Victorious Publishers
+    url: "https://www.victoriouspublishers.com/"
+    location: Laxmi Nagar, Delhi
+    # company overview
+    # overview: Example Co. is a widely recognized company for cloud-native development. It builds tools for Kubernetes.
+  positions:
+  - designation: Typesetter, DTP
+    start: April 2015
+    # don't provide end date if you are currently working there. It will be replaced by "Present"
+    end: August 2015
+    # give some points about what was your responsibilities at the company.
+    # responsibilities:
+    # - Design and develop XYZ tool for ABC task
+    # - Design, develop and manage disaster recovery tool [Xtool](https://www.example.com) that backup Kubernetes volumes, databases, and cluster's resource definition.
+    # - Lead backend team.
+
+- company:
+    name: JOSH Talks
+    url: "https://www.joshtalks.com/"
+    location: Gurgaon, Haryana
+  positions:
+  - designation: Volunteer
+    start: October 2018
+    end: October 2018
+
+- company:
+    name: Indian Post
+    url: "https://www.indiapost.gov.in/vas/Pages/IndiaPostHome.aspx"
+    location: Seoni, MP
+  positions:
+  - designation: Branch Post Master (BPM)
+    start: 04 Feb, 2019
+    end: 02 June, 2019
+
+- company:
+    name: 2626 Creative Studio
+    url: "http://visit.2626.today/"
+    location: Chattarpur, Delhi
+  positions:
+    - designation: Web Developer (Intern)
+      start: 05 June, 2019
+      end: 05 August, 2019
+
+- company:
+    name: Accordify Solutions
+    url: "https://accordify.co.in/"
+    location: Gwalior, MP
+  positions:
+    - designation: Front End Developer (Freelance)
+      start: 23 July, 2019
+      end: Nov, 2019
+
+- company:
+    name: Fossbytes
+    url: "https://fossbytes.com/author/sarvottam/"
+    location: Noida, UP
+  positions:
+    - designation: Linux and open source writer (Intern)
+      start: 15 January 2020
+
+- company:
+    name: Linux Journal
+    url: "https://www.linuxjournal.com/users/sarvottam-kumar"
+    location: US
+  positions:
+    - designation: Linux and open source contributing writer
+      start: 02 October, 2020
+

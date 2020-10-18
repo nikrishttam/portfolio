@@ -8,6 +8,11 @@
         {{ if .Site.Params.logo.inverted }}
         {{ $invertedLogo = .Site.Params.logo.inverted }}
         {{ end }}
+
+        {{ $sections:= .Site.Data.sections }}
+{{ if (index .Site.Data .Site.Language.Lang).sections }}
+  {{ $sections = (index .Site.Data .Site.Language.Lang).sections }}
+{{ end }}
         <a class="navbar-brand" href="{{ .Site.BaseURL }}">
             <img src="{{ $invertedLogo }}" id="logo">
             {{- .Site.Title -}}
@@ -19,39 +24,44 @@
 
         <div class="collapse navbar-collapse" id="top-nav-items">
             <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="#home">Home</a>
-                </li>
-                {{- if .Site.Data.sections }}
-                {{- range sort .Site.Data.sections "section.weight" }}
-                {{ if and (.section.enable) (.section.showOnNavbar)}}
-                <li class="nav-item">
-                    <a class="nav-link" href="#{{ replace (lower .section.name) " " "-" }}">{{ .section.name }}</a>
-                </li>
-                {{ end }}
+              
+              {{ if $sections }}
+                {{ range sort $sections "section.weight" }}
+                  {{ if and (.section.enable) (.section.showOnNavbar)}}
+                    {{ $sectionID := replace (lower .section.name) " " "-"  }}
+                    {{ if .section.id }}
+                      {{ $sectionID = .section.id }}
+                    {{ end }}
+                    <li class="nav-item">
+                      <a class="nav-link" href="#{{ $sectionID }}">{{ .section.name }}</a>
+                    </li>
+                  {{ end }}
                 {{- end }}
-                {{- end }}
-                {{ $hasCustomMenus:= false }}
-                {{ if and site.Params.customMenus }}
+              {{- end }}
+              {{ $hasCustomMenus:= false }}
+              {{ if and site.Params.customMenus }}
                 {{ if gt (len site.Params.customMenus) 0 }}
-                {{ $hasCustomMenus = true }}
+                  {{ $hasCustomMenus = true }}
                 {{ end }}
-                {{ end }}
-                {{ if (or site.Params.enableBlogPost $hasCustomMenus) }}
+              {{ end }}
+              {{ if (or site.Params.enableBlogPost $hasCustomMenus) }}
                 <div class="dropdown-divider" id="top-navbar-divider"></div>
-                {{ end }}
-                {{ if site.Params.enableBlogPost }}
+              {{ end }}
+              {{ if site.Params.enableBlogPost }}
                 <li class="nav-item">
-                    <a class="nav-link" id="blog-link" href="/posts">Blogs</a>
+                  <a class="nav-link" id="blog-link" href="{{ "/posts" | relLangURL }}">{{ i18n "posts" }}</a>
                 </li>
-                {{ end }}
-                <!-- {{ range site.Params.customMenus }}
+              {{ end }}
+              {{ range  (index .Site.Data .Site.Language.Lang).site.customMenus }}
                 <li class="nav-item">
-                    <a class="nav-link" href="{{ .url }}">{{ .name }}</a>
+                  <a class="nav-link" href="{{ .url }}">{{ .name }}</a>
                 </li>
-                {{ end }} -->
+              {{ end }}
+              {{ if .IsTranslated }}
+                {{ partial "navigators/lang-selector.html" . }}
+              {{ end }}
             </ul>
-        </div>
+          </div>
     </div>
     <!-- Store the logo information in a hidden img for the JS -->
     <img src="{{ $mainLogo }}" class="d-none" id="main-logo">

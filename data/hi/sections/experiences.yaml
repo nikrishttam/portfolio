@@ -1,0 +1,81 @@
+# section information
+section:
+  name: अनुभवों
+  id: experiences
+  enable: true
+  weight: 3
+  showOnNavbar: true
+  # Can optionally hide the title in sections
+  # hideTitle: true 
+
+# Your experiences
+experiences:
+- company:
+    name: विक्टोरियस पब्लिशर्स
+    url: "https://www.victoriouspublishers.com/"
+    location: लक्ष्मी नगर, दिल्ली
+    # company overview
+    # overview: Example Co. is a widely recognized company for cloud-native development. It builds tools for Kubernetes.
+  positions:
+  - designation: टाइपसेट्टर, डीटीपी
+    start: अप्रैल 2015
+    # don't provide end date if you are currently working there. It will be replaced by "Present"
+    end: अगस्त 2015
+    # give some points about what was your responsibilities at the company.
+    # responsibilities:
+    # - Design and develop XYZ tool for ABC task
+    # - Design, develop and manage disaster recovery tool [Xtool](https://www.example.com) that backup Kubernetes volumes, databases, and cluster's resource definition.
+    # - Lead backend team.
+
+- company:
+    name: जोश टॉक्स 
+    url: "https://www.joshtalks.com/"
+    location: गुड़गांव, हरियाणा
+  positions:
+  - designation: वालंटियर
+    start: अक्टूबर 2018
+    end: अक्टूबर 2018
+
+- company:
+    name: भारतीय डाक
+    url: "https://www.indiapost.gov.in/vas/Pages/IndiaPostHome.aspx"
+    location: सिवनी, मध्य प्रदेश
+  positions:
+  - designation: शाखा पोस्ट मास्टर (बीपीएम)
+    start: 04 फरवरी, 2019
+    end: 02 जून, 2019
+
+- company:
+    name: 2626 क्रिएटिव स्टूडियो 
+    url: "http://visit.2626.today/"
+    location: छतरपुर, दिल्ली
+  positions:
+    - designation: वेब डेवलपर (इंटर्न)
+      start: 05 जून, 2019
+      end: 05 अगस्त, 2019
+
+- company:
+    name: अकॉर्डिफ़ी सोलूशन्स 
+    url: "https://accordify.co.in/"
+    location: ग्वालियर, मध्यप्रदेश
+  positions:
+    - designation: फ्रंट एंड डेवलपर (फ्रीलांस)
+      start: 23 जुलाई, 2019
+      end: नवंबर, 2019
+
+- company:
+    name: फॉसबाइट 
+    url: "https://fossbytes.com/author/sarvottam/"
+    location: नोएडा, उत्तरप्रदेश
+  positions:
+    - designation: लिनक्स और ओपन सोर्स लेखक (इंटर्न)
+      start: 15 जनवरी 2020
+
+- company:
+    name: लिनक्स जर्नल
+    url: "https://www.linuxjournal.com/users/sarvottam-kumar"
+    location: संयुक्त राज्य अमेरिका
+  positions:
+    - designation: लिनक्स और ओपन सोर्स लेखक
+      start: 02 अक्टूबर, 2020
+
