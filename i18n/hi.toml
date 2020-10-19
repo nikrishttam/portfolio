@@ -14,19 +14,10 @@ other = "बायोडाटा"
 other = "पथ प्रदर्शन"
 
 [contact_me]
-other = "मुझसे संपर्क करो :"
-
-[newsletter_text]
-other = "Restez à jour par e-mail"
-
-[newsletter_input_placeholder]
-other = "Entrez une adresse e-mail"
-
-[newsletter_warning]
-other = "Nous ne partagerons jamais votre courriel avec quelqu'un d'autre."
+other = "मुझसे संपर्क करो:"
 
 [submit]
 other = "जमा करें"
 
 [hugoAttributionText]
-other = "Alimenté par"
+other = "द्वारा संचालित"
