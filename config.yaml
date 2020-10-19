@@ -3,19 +3,18 @@ languageCode: en-us
 theme: "toha"
 publishDir: "docs"
 
-DefaultContentLanguage: "hi"
-
+DefaultContentLanguage: "en"
 # Manage languages
 # For any more details, you can check the official documentation: https://gohugo.io/content-management/multilingual/
 languages:
   en:
     languageName: English
     title: "Sarvottam Kumar"
-    weight: 2
+    weight: 1
   hi:
     languageName: Hindi
     title: "सर्वोत्तम कुमार"
-    weight: 1
+    weight: 2
 
 # Allow raw html in markdown file
 markup:
@@ -38,6 +37,7 @@ enableEmoji: true
 
 # Custom parameters
 params:
+  description: "Portfolio and personal blog of Sarvottam Kumar."
   # background image of the landing page
   background: "assets/images/background.jpg"
 

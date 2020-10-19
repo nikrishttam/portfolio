@@ -3,44 +3,44 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://sarru1291.github.io/en/categories/</loc>
+    <loc>https://sarru1291.github.io/categories/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="hi"
+                href="https://sarru1291.github.io/hi/categories/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
                 href="https://sarru1291.github.io/categories/"
                 />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://sarru1291.github.io/en/categories/"
-                />
   </url>
   
   <url>
-    <loc>https://sarru1291.github.io/en/</loc>
+    <loc>https://sarru1291.github.io/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="hi"
+                href="https://sarru1291.github.io/hi/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
                 href="https://sarru1291.github.io/"
                 />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://sarru1291.github.io/en/"
-                />
   </url>
   
   <url>
-    <loc>https://sarru1291.github.io/en/tags/</loc>
+    <loc>https://sarru1291.github.io/tags/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="hi"
-                href="https://sarru1291.github.io/tags/"
+                href="https://sarru1291.github.io/hi/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://sarru1291.github.io/en/tags/"
+                href="https://sarru1291.github.io/tags/"
                 />
   </url>
   
