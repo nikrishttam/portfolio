@@ -1,7 +1,8 @@
 name: "Sarvottam Kumar"
 nickname: "Sarvottam Kumar"
-image: "assets/images/profile_picture_140x140.svg"
+image: "images/site/favicon.png"
 # give your some contact information. they will be used in the footer
+greeting: "Hi, I am"
 contactInfo:
     email: "sarru1291@gmail.com"
     phone: "+919958938566"

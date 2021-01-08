@@ -1,7 +1,9 @@
 name: "सर्वोत्तम कुमार"
 nickname: "सर्वोत्तम कुमार"
-image: "assets/images/profile_picture_140x140.svg"
+image: "images/site/favicon.png"
 # give your some contact information. they will be used in the footer
+greeting: "हाय मैं हूँ"
+
 contactInfo:
     email: "sarru1291@gmail.com"
     phone: "+919958938566"

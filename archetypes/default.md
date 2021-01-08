@@ -7,6 +7,6 @@ featured_image: ""
 description: ""
 author:
     name: Sarvottam Kumar
-    image: /assets/images/profile_picture_140x140.svg
+    image: /images/site/favicon.png
 ---
 
