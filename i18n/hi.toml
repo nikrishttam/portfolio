@@ -5,7 +5,7 @@ other = "सर्वोत्तम कुमार"
 other="होम"
 
 [posts]
-other = "लेख"
+other = "पोस्ट"
 
 [at]
 other = "अन्य"
@@ -24,3 +24,9 @@ other = "जमा करें"
 
 [hugoAttributionText]
 other = "द्वारा संचालित"
+
+[see_more]
+other = "और देखें"
+
+[toc_heading]
+other = "विषय - सूची"

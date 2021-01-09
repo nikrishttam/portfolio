@@ -5,7 +5,7 @@ other = "Sarvottam Kumar"
 other="Home"
 
 [posts]
-other = "Articles"
+other = "Posts"
 
 [at]
 other = "at"
@@ -24,3 +24,9 @@ other = "Submit"
 
 [hugoAttributionText]
 other = "Powered by"
+
+[see_more]
+other = "See More"
+
+[toc_heading]
+other = "Table of Contents"
