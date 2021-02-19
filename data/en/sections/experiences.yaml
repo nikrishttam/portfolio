@@ -11,6 +11,20 @@ section:
 # Your experiences
 experiences:
   - company:
+      name: Tata Consultancy Services
+      url: "https://www.tcs.com/"
+      location: Hyderabad, India.
+    positions:
+      - designation: Assistant System Engineer
+        start: 03 February, 2021
+  - company:
+      name: Abyow
+      url: "https://abyow.com/"
+      location: Delhi, India.
+    positions:
+      - designation: Product Head
+        start: October, 2020
+  - company:
       name: Linux Journal
       url: "https://www.linuxjournal.com/users/sarvottam-kumar"
       location: U.S.
@@ -23,7 +37,7 @@ experiences:
       url: "https://fossbytes.com/author/sarvottam/"
       location: Noida, UP
     positions:
-      - designation: Linux and open source writer (Intern)
+      - designation: Linux and open source writer (Intern-turned-freelance)
         start: 15 January 2020
 
   - company:
