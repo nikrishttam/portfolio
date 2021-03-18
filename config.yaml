@@ -37,7 +37,7 @@ enableEmoji: true
 
 # Custom parameters
 params:
-  description: "Sarvottam Kumar is an assistant software engineer at TCS with interest and experience in blockchain, react.js, angular, nodejs, java and flutter development. He started using Linux in his first year of college. Since then, Sarvottam Kumar is exploring its nuts and bolts and is now also penning down the experience and insights of Linux and open source."
+  description: "Sarvottam Kumar is an assistant software engineer at TCS with interest and experience in blockchain, react.js, angular, nodejs, java and flutter development. Sarvottam Kumar also works as freelance Linux and open source writer, and developer."
   # background image of the landing page
   background: /images/site/background.jpg
 
