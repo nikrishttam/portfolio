@@ -17,6 +17,44 @@ experiences:
     positions:
       - designation: Assistant System Engineer
         start: 03 February, 2021
+        
+  - company:
+      name: Linux Shell Tips
+      url: "https://www.linuxshelltips.com/author/sarru1291/"
+      location: India
+    positions:
+      - designation: Linux Content Writer (Freelance)
+        start: June, 2021
+        end: July, 2021
+
+  - company:
+      name: It's FOSS
+      url: "https://itsfoss.com/author/sarvottam/"
+      location: U.S.
+    positions:
+      - designation: Technical Writer (Freelance)
+        start: April, 2021
+        end: June, 2021
+
+  - company:
+      name: Hit Subscribe
+      url: "https://www.hitsubscribe.com/"
+      location: U.S.
+    positions:
+      - designation: Technical Writer (Freelance)
+        start: March, 2021
+        end: August, 2021
+
+  - company:
+      name: Accordify Solutions
+      url: "https://accordify.co.in/"
+      location: Gwalior, MP
+    positions:
+      - designation: Flutter Developer (Freelance)
+        start: Jan, 2021
+        end: March, 2021
+
+
   - company:
       name: Abyow
       url: "https://abyow.com/"
@@ -24,6 +62,7 @@ experiences:
     positions:
       - designation: Product Head
         start: October, 2020
+
   - company:
       name: Linux Journal
       url: "https://www.linuxjournal.com/users/sarvottam-kumar"
@@ -31,6 +70,7 @@ experiences:
     positions:
       - designation: Linux and open source contributing writer
         start: 02 October, 2020
+        end: October, 2021
 
   - company:
       name: Fossbytes
@@ -39,6 +79,7 @@ experiences:
     positions:
       - designation: Linux and open source writer (Intern-turned-freelance)
         start: 15 January 2020
+        end: June, 2021
 
   - company:
       name: Accordify Solutions
@@ -57,7 +98,6 @@ experiences:
       - designation: Web Developer (Intern)
         start: 05 June, 2019
         end: 05 August, 2019
-
 
   - company:
       name: Indian Post

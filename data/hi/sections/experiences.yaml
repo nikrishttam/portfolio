@@ -11,13 +11,66 @@ section:
 # Your experiences
 experiences:
   - company:
+      name: टाटा कंसल्टेंसी सर्विसेज
+      url: "https://www.tcs.com/"
+      location: हैदराबाद, भारत
+    positions:
+      - designation: असिस्टेंट सिस्टम इंजीनियर
+        start: 03 फ़रवरी, 2021
+        
+  - company:
+      name: लिनक्स शैल युक्तियाँ
+      url: "https://www.linuxshelltips.com/author/sarru1291/"
+      location: भारत
+    positions:
+      - designation: लिनक्स कंटेंट राइटर (फ्रीलांस)
+        start: जून, 2021
+        end: जुलाई, 2021
+
+  - company:
+      name: It's FOSS
+      url: "https://itsfoss.com/author/sarvottam/"
+      location: अमेरिका
+    positions:
+      - designation: तकनीकी लेखक (फ्रीलांस)
+        start: अप्रैल, 2021
+        end: जून, 2021
+
+  - company:
+      name: Hit Subscribe
+      url: "https://www.hitsubscribe.com/"
+      location: U.S.
+    positions:
+      - designation: तकनीकी लेखक (फ्रीलांस)
+        start: मार्च, 2021
+        end: अगस्त, 2021
+
+  - company:
+      name: एकॉर्डिफाई सॉल्यूशंस
+      url: "https://accordify.co.in/"
+      location: ग्वालियर, एमपी
+    positions:
+      - designation: फ्लटर डेवलपर (फ्रीलांस)
+        start: जनवरी, 2021
+        end: मार्च, 2021
+
+
+  - company:
+      name: अब्यो
+      url: "https://abyow.com/"
+      location: दिल्ली, भारत
+    positions:
+      - designation: प्रोडक्ट प्रमुख
+        start: अक्टूबर, 2020
+
+  - company:
       name: लिनक्स जर्नल
       url: "https://www.linuxjournal.com/users/sarvottam-kumar"
       location: संयुक्त राज्य अमेरिका
     positions:
       - designation: लिनक्स और ओपन सोर्स लेखक
         start: 02 अक्टूबर, 2020
-        end: वर्तमान
+        end: अक्टूबर
 
   - company:
       name: फॉसबाइट
@@ -26,7 +79,7 @@ experiences:
     positions:
       - designation: लिनक्स और ओपन सोर्स लेखक (इंटर्न)
         start: 15 जनवरी 2020
-        end: वर्तमान
+        end: जून, 2021
 
   - company:
       name: अकॉर्डिफ़ी सोलूशन्स
