@@ -1,97 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-9GR1NNW047"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-<head>
+      gtag("config", "G-9GR1NNW047");
+    </script>
 
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-9GR1NNW047"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sarvottam Kumar</title>
 
-  gtag('config', 'G-9GR1NNW047');
-</script>
-
-
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sarvottam Kumar</title>
-
-  <!--
+    <!--
     - favicon
   -->
-  <link rel="shortcut icon" href="./assets/images/favicon.png" type="image/x-icon">
+    <link
+      rel="shortcut icon"
+      href="./assets/images/favicon.png"
+      type="image/x-icon"
+    />
 
-  <!--
+    <!--
     - custom css link
   -->
-  <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/style.css" />
 
-  <!--
+    <!--
     - google font link
   -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
-</head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<body>
-
-  <!--
+  <body>
+    <!--
     - #MAIN
   -->
 
-  <main>
-
-    <!--
+    <main>
+      <!--
       - #SIDEBAR
     -->
 
-    <aside class="sidebar" data-sidebar>
+      <aside class="sidebar" data-sidebar>
+        <div class="sidebar-info">
+          <figure class="avatar-box">
+            <img
+              src="./assets/images/favicon.png"
+              alt="Sarvottam Kumar"
+              width="80"
+              style="border-radius: 15%"
+            />
+          </figure>
 
-      <div class="sidebar-info">
+          <div class="info-content">
+            <h1 class="name" title="Sarvottam Kumar">Sarvottam Kumar</h1>
 
-        <figure class="avatar-box">
-          <img src="./assets/images/favicon.png" alt="Sarvottam Kumar" width="80" style="border-radius: 15%;">
-        </figure>
+            <p class="title">Full Stack Developer</p>
+          </div>
 
-        <div class="info-content">
-          <h1 class="name" title="Sarvottam Kumar">Sarvottam Kumar</h1>
+          <button class="info_more-btn" data-sidebar-btn>
+            <span>Show Contacts</span>
 
-          <p class="title">Full Stack Developer</p>
+            <ion-icon name="chevron-down"></ion-icon>
+          </button>
         </div>
 
-        <button class="info_more-btn" data-sidebar-btn>
-          <span>Show Contacts</span>
+        <div class="sidebar-info_more">
+          <div class="separator"></div>
 
-          <ion-icon name="chevron-down"></ion-icon>
-        </button>
+          <ul class="contacts-list">
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="mail-outline"></ion-icon>
+              </div>
 
-      </div>
+              <div class="contact-info">
+                <p class="contact-title">Email</p>
 
-      <div class="sidebar-info_more">
+                <a href="mailto:sarru1291@gmail.com" class="contact-link"
+                  >sarru1291@gmail.com</a
+                >
+              </div>
+            </li>
 
-        <div class="separator"></div>
-
-        <ul class="contacts-list">
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="mail-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Email</p>
-
-              <a href="mailto:sarru1291@gmail.com" class="contact-link">sarru1291@gmail.com</a>
-            </div>
-
-          </li>
-
-          <!-- <li class="contact-item">
+            <!-- <li class="contact-item">
 
             <div class="icon-box">
               <ion-icon name="phone-portrait-outline"></ion-icon>
@@ -105,145 +112,142 @@
 
           </li> -->
 
-          <li class="contact-item">
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="calendar-outline"></ion-icon>
+              </div>
 
-            <div class="icon-box">
-              <ion-icon name="calendar-outline"></ion-icon>
-            </div>
+              <div class="contact-info">
+                <p class="contact-title">Birthday</p>
 
-            <div class="contact-info">
-              <p class="contact-title">Birthday</p>
+                <time datetime="1982-06-23">Feb 02, 1999</time>
+              </div>
+            </li>
 
-              <time datetime="1982-06-23">Feb 02, 1999</time>
-            </div>
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="location-outline"></ion-icon>
+              </div>
 
-          </li>
+              <div class="contact-info">
+                <p class="contact-title">Location</p>
 
-          <li class="contact-item">
+                <address>India</address>
+              </div>
+            </li>
+          </ul>
 
-            <div class="icon-box">
-              <ion-icon name="location-outline"></ion-icon>
-            </div>
+          <div class="separator"></div>
 
-            <div class="contact-info">
-              <p class="contact-title">Location</p>
-
-              <address>India</address>
-            </div>
-
-          </li>
-
-        </ul>
-
-        <div class="separator"></div>
-
-        <ul class="social-list">
-          <li class="social-item">
-            <a href="https://www.github.com/sarru1291" class="social-link" target="_blank">
-              <ion-icon name="logo-github"></ion-icon>
-            </a>
-          </li>
-          <!-- <li class="social-item">
+          <ul class="social-list">
+            <li class="social-item">
+              <a
+                href="https://www.github.com/nikrishttam"
+                class="social-link"
+                target="_blank"
+              >
+                <ion-icon name="logo-github"></ion-icon>
+              </a>
+            </li>
+            <!-- <li class="social-item">
             <a href="https://www.youtube.com/@theofficialsarvottam" class="social-link" target="_blank">
               <ion-icon name="logo-youtube"></ion-icon>
             </a>
           </li> -->
 
-          <!-- <li class="social-item">
-            <a href="https://twitter.com/sarru1291" class="social-link" target="_blank">
-              <ion-icon name="logo-twitter"></ion-icon>
-            </a>
-          </li> -->
-          <li class="social-item">
-            <a href="https://www.linkedin.com/in/sarru1291/" class="social-link" target="_blank">
-              <ion-icon name="logo-linkedin"></ion-icon>
-            </a>
-          </li>
-          <!-- <li class="social-item">
+            <li class="social-item">
+              <a
+                href="https://twitter.com/nikrishttam"
+                class="social-link"
+                target="_blank"
+              >
+                <ion-icon name="logo-twitter"></ion-icon>
+              </a>
+            </li>
+            <li class="social-item">
+              <a
+                href="https://www.linkedin.com/in/nikrishttam/"
+                class="social-link"
+                target="_blank"
+              >
+                <ion-icon name="logo-linkedin"></ion-icon>
+              </a>
+            </li>
+            <!-- <li class="social-item">
             <a href="https://www.instagram.com/theofficialsarvottam" class="social-link">
               <ion-icon name="logo-instagram" target="_blank"></ion-icon>
             </a>
           </li> -->
+          </ul>
+        </div>
+      </aside>
 
-        </ul>
-
-      </div>
-
-    </aside>
-
-
-
-
-
-    <!--
+      <!--
       - #main-content
     -->
 
-    <div class="main-content">
-
-      <!--
+      <div class="main-content">
+        <!--
         - #NAVBAR
       -->
 
-      <nav class="navbar">
+        <nav class="navbar">
+          <ul class="navbar-list">
+            <li class="navbar-item">
+              <button class="navbar-link active" data-nav-link>About</button>
+            </li>
 
-        <ul class="navbar-list">
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Resume</button>
+            </li>
 
-          <li class="navbar-item">
-            <button class="navbar-link  active" data-nav-link>About</button>
-          </li>
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Portfolio</button>
+            </li>
 
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Resume</button>
-          </li>
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Writings</button>
+            </li>
+          </ul>
+        </nav>
 
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Portfolio</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Writings</button>
-          </li>
-
-        </ul>
-
-      </nav>
-
-
-
-
-
-      <!--
+        <!--
         - #ABOUT
       -->
 
-      <article class="about  active" data-page="about">
+        <article class="about active" data-page="about">
+          <header>
+            <h2 class="h2 article-title">About me</h2>
+          </header>
 
-        <header>
-          <h2 class="h2 article-title">About me</h2>
-        </header>
+          <section class="about-text">
+            <p>
+              I'm a Software Engineer with 2 years of professional experience
+              turning coffee into clean code. Skilled at crafting responsive,
+              user-friendly web apps using modern tools like React/Next.js on
+              the front end and Node.js or Spring on the back. Fluent in Java,
+              JavaScript, MongoDB, SQL—and just as comfortable navigating a
+              Linux terminal as writing shell scripts in it.
+            </p>
 
-        <section class="about-text">
-          <p>
-           I'm a Software Engineer with 2 years of professional experience turning coffee into clean code. Skilled at crafting responsive, user-friendly web apps using modern tools like React/Next.js on the front end and Node.js or Spring on the back. Fluent in Java, JavaScript, MongoDB, SQL—and just as comfortable navigating a Linux terminal as writing shell scripts in it.
-           
-          </p>
+            <p>
+              Outside of building apps, I've tackled a range of freelance
+              projects: from creating full-stack solutions to writing Linux
+              tutorials and technical docs that even beginners can follow.
+              Whether it's debugging a tricky API or explaining cron jobs to
+              humans, I’m all about making tech work—and make sense.
+            </p>
+          </section>
 
-          <p>
-            Outside of building apps, I've tackled a range of freelance projects: from creating full-stack solutions to writing Linux tutorials and technical docs that even beginners can follow. Whether it's debugging a tricky API or explaining cron jobs to humans, I’m all about making tech work—and make sense.
-          </p>
-        </section>
-
-
-        <!--
+          <!--
           - service
         -->
 
-        <section class="service">
-<!-- 
+          <section class="service">
+            <!-- 
           <h3 class="h3 service-title">Do check out and Subscribe My Newsletter!!</h3> -->
 
-          <!-- <ul class="service-list">
+            <!-- <ul class="service-list">
 
             <li class="service-item">
 
@@ -294,15 +298,13 @@
             </li>
 
           </ul> -->
-          
-        </section>
+          </section>
 
-
-        <!--
+          <!--
           - testimonials
         -->
 
-        <!-- <section class="testimonials">
+          <!-- <section class="testimonials">
 
           <h3 class="h3 testimonials-title">Testimonials</h3>
 
@@ -400,53 +402,51 @@
 
         </section> -->
 
-
-        <!--
+          <!--
           - testimonials modal
         -->
 
-        <div class="modal-container" data-modal-container>
+          <div class="modal-container" data-modal-container>
+            <div class="overlay" data-overlay></div>
 
-          <div class="overlay" data-overlay></div>
+            <section class="testimonials-modal">
+              <button class="modal-close-btn" data-modal-close-btn>
+                <ion-icon name="close-outline"></ion-icon>
+              </button>
 
-          <section class="testimonials-modal">
+              <div class="modal-img-wrapper">
+                <figure class="modal-avatar-box">
+                  <img
+                    src="./assets/images/avatar-1.png"
+                    alt="Daniel lewis"
+                    width="80"
+                    data-modal-img
+                  />
+                </figure>
 
-            <button class="modal-close-btn" data-modal-close-btn>
-              <ion-icon name="close-outline"></ion-icon>
-            </button>
-
-            <div class="modal-img-wrapper">
-              <figure class="modal-avatar-box">
-                <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img>
-              </figure>
-
-              <img src="./assets/images/icon-quote.svg" alt="quote icon">
-            </div>
-
-            <div class="modal-content">
-
-              <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
-
-              <time datetime="2021-06-14">14 June, 2021</time>
-
-              <div data-modal-text>
-                <p>
-                  Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
-                </p>
+                <img src="./assets/images/icon-quote.svg" alt="quote icon" />
               </div>
 
-            </div>
+              <div class="modal-content">
+                <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
 
-          </section>
+                <time datetime="2021-06-14">14 June, 2021</time>
 
-        </div>
+                <div data-modal-text>
+                  <p>
+                    Richard was hired to create a corporate identity. We were
+                    very pleased with the work done. She has a
+                  </p>
+                </div>
+              </div>
+            </section>
+          </div>
 
-
-        <!--
+          <!--
           - clients
         -->
 
-        <!-- <section class="clients">
+          <!-- <section class="clients">
 
           <h3 class="h3 clients-title">Clients</h3>
 
@@ -491,436 +491,354 @@
           </ul>
 
         </section> -->
+        </article>
 
-      </article>
-
-
-
-
-
-      <!--
+        <!--
         - #RESUME
       -->
 
-      <article class="resume" data-page="resume">
+        <article class="resume" data-page="resume">
+          <header>
+            <h2 class="h2 article-title">Resume</h2>
+          </header>
 
-        <header>
-          <h2 class="h2 article-title">Resume</h2>
-        </header>
+          <section class="timeline">
+            <div class="title-wrapper">
+              <div class="icon-box">
+                <ion-icon name="book-outline"></ion-icon>
+              </div>
 
-        <section class="timeline">
-
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
+              <h3 class="h3">Education</h3>
             </div>
 
-            <h3 class="h3">Education</h3>
-          </div>
+            <ol class="timeline-list">
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  Bharati Vidyapeeth's College Of Engineering, New Delhi, India
+                </h4>
 
-          <ol class="timeline-list">
+                <span>2016 — 2020</span>
 
-            <li class="timeline-item">
+                <p class="timeline-text">B.Tech. in Information Technology</p>
+              </li>
 
-              <h4 class="h4 timeline-item-title">Bharati Vidyapeeth's College Of Engineering, New Delhi, India</h4>
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  DAV Public School, Dhurwa, Ranchi-4, Jharkhand, India
+                </h4>
 
-              <span>2016 — 2020</span>
+                <span>2011-2015</span>
 
-              <p class="timeline-text">
-                B.Tech. in Information Technology
-              </p>
+                <p class="timeline-text">
+                  Matriculation and Higher Secondary School (10th and 12th)
+                </p>
+              </li>
 
-            </li>
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  Rajdhani Convent Jr High School, Khora Colony, Noida, UP
+                </h4>
 
-            <li class="timeline-item">
+                <span>Till 2011</span>
 
-              <h4 class="h4 timeline-item-title">DAV Public School, Dhurwa, Ranchi-4, Jharkhand, India</h4>
+                <p class="timeline-text">Pre to 8th Class</p>
+              </li>
+            </ol>
+          </section>
 
-              <span>2011-2015</span>
+          <section class="timeline">
+            <div class="title-wrapper">
+              <div class="icon-box">
+                <ion-icon name="book-outline"></ion-icon>
+              </div>
 
-              <p class="timeline-text">
-                Matriculation and Higher Secondary School (10th and 12th)
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Rajdhani Convent Jr High School, Khora Colony, Noida, UP</h4>
-
-              <span>Till 2011</span>
-
-              <p class="timeline-text">
-                Pre to 8th Class
-              </p>
-
-            </li>
-
-          </ol>
-
-        </section>
-
-        <section class="timeline">
-
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
+              <h3 class="h3">Experience</h3>
             </div>
 
-            <h3 class="h3">Experience</h3>
-          </div>
+            <ol class="timeline-list">
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  Assistant System Engineer
+                </h4>
 
-          <ol class="timeline-list">
+                <span>Feb 2021 — Jan 2023</span>
 
-            <li class="timeline-item">
+                <p class="timeline-text">
+                  Tata Consultancy Services, Hyderabad, India
+                </p>
+              </li>
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  Linux Content Writer (Freelance)
+                </h4>
 
-              <h4 class="h4 timeline-item-title">Assistant System Engineer</h4>
+                <span>Jun 2021 — July 2021</span>
 
-              <span>Feb 2021 — Jan 2023</span>
+                <p class="timeline-text">Linux Shell Tips</p>
+              </li>
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  Technical Writer (Freelance)
+                </h4>
 
-              <p class="timeline-text">
-                Tata Consultancy Services, Hyderabad, India
-              </p>
+                <span>Apr 2021 — June 2021</span>
 
-            </li>
-            <li class="timeline-item">
+                <p class="timeline-text">It's FOSS</p>
+              </li>
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  Technical Writer (Freelance)
+                </h4>
 
-              <h4 class="h4 timeline-item-title">Linux Content Writer (Freelance)</h4>
+                <span>Mar 2021 — Aug 2021</span>
 
-              <span>Jun 2021 — July 2021</span>
+                <p class="timeline-text">Hit Subscribe</p>
+              </li>
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  Flutter Developer (Freelance)
+                </h4>
 
-              <p class="timeline-text">
-                Linux Shell Tips
-              </p>
+                <span>Jan 2021 — Mar 2021</span>
 
-            </li>
-            <li class="timeline-item">
+                <p class="timeline-text">Accordify Solutions</p>
+              </li>
 
-              <h4 class="h4 timeline-item-title">Technical Writer (Freelance)</h4>
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">Product Head</h4>
 
-              <span>Apr 2021 — June 2021</span>
+                <span>Oct 2020 — May 2021</span>
 
-              <p class="timeline-text">
-                It's FOSS
-              </p>
+                <p class="timeline-text">Abyow</p>
+              </li>
 
-            </li>
-            <li class="timeline-item">
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  Linux and open source contributing writer
+                </h4>
 
-              <h4 class="h4 timeline-item-title">Technical Writer (Freelance)</h4>
+                <span>Oct 2021</span>
 
-              <span>Mar 2021 — Aug 2021</span>
+                <p class="timeline-text">Linux Journal</p>
+              </li>
 
-              <p class="timeline-text">
-                Hit Subscribe
-              </p>
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  Linux and open source writer (Intern-turned-freelance)
+                </h4>
 
-            </li>
-            <li class="timeline-item">
+                <span>15 Jan 2020 - June 2021</span>
 
-              <h4 class="h4 timeline-item-title">Flutter Developer (Freelance)</h4>
+                <p class="timeline-text">Fossbytes</p>
+              </li>
 
-              <span>Jan 2021 — Mar 2021</span>
-
-              <p class="timeline-text">
-                Accordify Solutions
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Product Head</h4>
-
-              <span>Oct 2020 — May 2021</span>
-
-              <p class="timeline-text">
-                Abyow
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Linux and open source contributing writer</h4>
-
-              <span>Oct 2021</span>
-
-              <p class="timeline-text">
-                Linux Journal
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Linux and open source writer (Intern-turned-freelance)</h4>
-
-              <span>15 Jan 2020 - June 2021</span>
-
-              <p class="timeline-text">
-                Fossbytes
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Front End Developer (Freelance)</h4>
-
-              <span>23 July 2019 — Nov 2019</span>
-
-              <p class="timeline-text">
-                Accordify Solutions
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Web Developer (Intern)</h4>
-
-              <span>05 June 2019 — 5 Aug 2019</span>
-
-              <p class="timeline-text">
-                2626 Creative Studio
-              </p>
-
-            </li>
-
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Branch Post Master (BPM)</h4>
-
-              <span>04 Feb 2019 — 02 Jun 2019</span>
-
-              <p class="timeline-text">
-                Indian Post
-              </p>
-
-            </li>
-
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Volunteer</h4>
-
-              <span>October 2018</span>
-
-              <p class="timeline-text">
-                JOSH Talks
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Typesetter, DTP</h4>
-
-              <span>Apr 2015 - Aug 2015</span>
-
-              <p class="timeline-text">
-                Victorious Publishers
-              </p>
-
-            </li>
-          </ol>
-
-        </section>
-
-        <section class="skill">
-
-          <h3 class="h3 skills-title">My skills</h3>
-
-          <ul class="skills-list content-card">
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Writing</h5>
-                <data value="85">85%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 85%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Linux</h5>
-                <data value="70">70%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 70%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Java</h5>
-                <data value="75">75%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 75%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Javascript</h5>
-                <data value="75">75%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 75%;"></div>
-              </div>
-
-            </li>
-
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">React/Next</h5>
-                <data value="80">80%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 80%;"></div>
-              </div>
-
-            </li>
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Flutter</h5>
-                <data value="80">80%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 80%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Node</h5>
-                <data value="65">65%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 65%;"></div>
-              </div>
-
-            </li>
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Mongo/PL/SQL</h5>
-                <data value="65">65%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 65%;"></div>
-              </div>
-
-            </li>
-          </ul>
-
-        </section>
-
-      </article>
-
-
-
-
-
-      <!--
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  Front End Developer (Freelance)
+                </h4>
+
+                <span>23 July 2019 — Nov 2019</span>
+
+                <p class="timeline-text">Accordify Solutions</p>
+              </li>
+
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">Web Developer (Intern)</h4>
+
+                <span>05 June 2019 — 5 Aug 2019</span>
+
+                <p class="timeline-text">2626 Creative Studio</p>
+              </li>
+
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">Branch Post Master (BPM)</h4>
+
+                <span>04 Feb 2019 — 02 Jun 2019</span>
+
+                <p class="timeline-text">Indian Post</p>
+              </li>
+
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">Volunteer</h4>
+
+                <span>October 2018</span>
+
+                <p class="timeline-text">JOSH Talks</p>
+              </li>
+
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">Typesetter, DTP</h4>
+
+                <span>Apr 2015 - Aug 2015</span>
+
+                <p class="timeline-text">Victorious Publishers</p>
+              </li>
+            </ol>
+          </section>
+
+          <section class="skill">
+            <h3 class="h3 skills-title">My skills</h3>
+
+            <ul class="skills-list content-card">
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">Writing</h5>
+                  <data value="85">85%</data>
+                </div>
+
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 85%"></div>
+                </div>
+              </li>
+
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">Linux</h5>
+                  <data value="70">70%</data>
+                </div>
+
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 70%"></div>
+                </div>
+              </li>
+
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">Java</h5>
+                  <data value="75">75%</data>
+                </div>
+
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 75%"></div>
+                </div>
+              </li>
+
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">Javascript</h5>
+                  <data value="75">75%</data>
+                </div>
+
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 75%"></div>
+                </div>
+              </li>
+
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">React/Next</h5>
+                  <data value="80">80%</data>
+                </div>
+
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 80%"></div>
+                </div>
+              </li>
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">Flutter</h5>
+                  <data value="80">80%</data>
+                </div>
+
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 80%"></div>
+                </div>
+              </li>
+
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">Node</h5>
+                  <data value="65">65%</data>
+                </div>
+
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 65%"></div>
+                </div>
+              </li>
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">Mongo/PL/SQL</h5>
+                  <data value="65">65%</data>
+                </div>
+
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 65%"></div>
+                </div>
+              </li>
+            </ul>
+          </section>
+        </article>
+
+        <!--
         - #PORTFOLIO
       -->
 
-      <article class="portfolio" data-page="portfolio">
+        <article class="portfolio" data-page="portfolio">
+          <header>
+            <h2 class="h2 article-title">Portfolio</h2>
+          </header>
 
-        <header>
-          <h2 class="h2 article-title">Portfolio</h2>
-        </header>
-
-        <section class="projects">
-
-          <ul class="filter-list">
-
-            <li class="filter-item">
-              <button class="active" data-filter-btn>All</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Academics</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Hackathons</button>
-            </li>
-            <li class="filter-item">
-              <button data-filter-btn>Achievements</button>
-            </li>
- <li class="filter-item">
-              <button data-filter-btn>Other</button>
-            </li>
-          </ul>
-
-          <div class="filter-select-box">
-
-            <button class="filter-select" data-select>
-
-              <div class="select-value" data-selecct-value>Select category</div>
-
-              <div class="select-icon">
-                <ion-icon name="chevron-down"></ion-icon>
-              </div>
-
-            </button>
-
-            <ul class="select-list">
-
-              <li class="select-item">
-                <button data-select-item>All</button>
+          <section class="projects">
+            <ul class="filter-list">
+              <li class="filter-item">
+                <button class="active" data-filter-btn>All</button>
               </li>
 
-              <li class="select-item">
-                <button data-select-item>Web design</button>
+              <li class="filter-item">
+                <button data-filter-btn>Academics</button>
               </li>
 
-              <li class="select-item">
-                <button data-select-item>Applications</button>
+              <li class="filter-item">
+                <button data-filter-btn>Hackathons</button>
               </li>
-
-              <li class="select-item">
-                <button data-select-item>Web development</button>
+              <li class="filter-item">
+                <button data-filter-btn>Achievements</button>
               </li>
-
+              <li class="filter-item">
+                <button data-filter-btn>Other</button>
+              </li>
             </ul>
 
-          </div>
+            <div class="filter-select-box">
+              <button class="filter-select" data-select>
+                <div class="select-value" data-selecct-value>
+                  Select category
+                </div>
 
-          <ul class="project-list">
-<li class="project-item  active" data-filter-item data-category="other">
-                <!-- <a href="https://github.com/sarru1291/nitya" target="_blank"> -->
+                <div class="select-icon">
+                  <ion-icon name="chevron-down"></ion-icon>
+                </div>
+              </button>
 
-              <a href="#">
+              <ul class="select-list">
+                <li class="select-item">
+                  <button data-select-item>All</button>
+                </li>
 
-                <!-- <figure class="project-img">
+                <li class="select-item">
+                  <button data-select-item>Web design</button>
+                </li>
+
+                <li class="select-item">
+                  <button data-select-item>Applications</button>
+                </li>
+
+                <li class="select-item">
+                  <button data-select-item>Web development</button>
+                </li>
+              </ul>
+            </div>
+
+            <ul class="project-list">
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="other"
+              >
+                <!-- <a href="https://github.com/nikrishttam/nitya" target="_blank"> -->
+
+                <a href="https://baahubalitypingcenter.com">
+                  <!-- <figure class="project-img">
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
@@ -928,17 +846,23 @@
                   <img src="./assets/images/project-1.jpg" alt="finance" loading="lazy">
                 </figure> -->
 
-                <h3 class="project-title">Baahubali Typing Center</h3>
+                  <h3 class="project-title">Baahubali Typing Center</h3>
 
-                <p class="project-category">A paid typing test platform tailored for government exam requirements, supporting
-multiple Indian languages, timing, content and auto-evaluation to generate exam-accurate results</p>
-
-              </a>
-            </li>
-            <li class="project-item  active" data-filter-item data-category="academics">
-              <a href="https://github.com/sarru1291/nitya" target="_blank">
-
-                <!-- <figure class="project-img">
+                  <p class="project-category">
+                    A paid typing test platform tailored for government exam
+                    requirements, supporting multiple Indian languages, timing,
+                    content and auto-evaluation to generate exam-accurate
+                    results
+                  </p>
+                </a>
+              </li>
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="academics"
+              >
+                <a href="https://github.com/nikrishttam/nitya" target="_blank">
+                  <!-- <figure class="project-img">
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
@@ -946,137 +870,185 @@ multiple Indian languages, timing, content and auto-evaluation to generate exam-
                   <img src="./assets/images/project-1.jpg" alt="finance" loading="lazy">
                 </figure> -->
 
-                <h3 class="project-title">Nitya</h3>
+                  <h3 class="project-title">Nitya</h3>
 
-                <p class="project-category">Nitya is a Decentralised Criminal Justice System using Ethereum Platform.</p>
+                  <p class="project-category">
+                    Nitya is a Decentralised Criminal Justice System using
+                    Ethereum Platform.
+                  </p>
+                </a>
+              </li>
 
-              </a>
-            </li>
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="hackathons"
+              >
+                <a
+                  href="https://github.com/nikrishttam/retinoskin"
+                  target="_blank"
+                >
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
 
-            <li class="project-item  active" data-filter-item data-category="hackathons">
-              <a href="https://github.com/sarru1291/retinoskin"  target="_blank">
+                    <img
+                      src="./assets/images/retinoskin.png"
+                      alt="orizon"
+                      loading="lazy"
+                    />
+                  </figure>
 
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
+                  <h3 class="project-title">Retinoskin</h3>
 
-                  <img src="./assets/images/retinoskin.png" alt="orizon" loading="lazy">
-                </figure>
+                  <p class="project-category">
+                    A Web App for checking Skin Cancer and Diabetic Retinopathy.
+                  </p>
+                </a>
+              </li>
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="hackathons"
+              >
+                <a
+                  href="https://github.com/nikrishttam/vision-guide"
+                  target="_blank"
+                >
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
 
-                <h3 class="project-title">Retinoskin</h3>
+                    <img
+                      src="./assets/images/visionguide.jpeg"
+                      alt="orizon"
+                      loading="lazy"
+                    />
+                  </figure>
 
-                <p class="project-category">A Web App for checking Skin Cancer and Diabetic Retinopathy.</p>
+                  <h3 class="project-title">Vision Guide</h3>
 
-              </a>
-            </li>
-            <li class="project-item  active" data-filter-item data-category="hackathons">
-              <a href="https://github.com/sarru1291/vision-guide" target="_blank">
+                  <p class="project-category">
+                    A Handheld IoT device using Raspberry Pi and ML for visually
+                    impaired people to carry out daily life activities.
+                  </p>
+                </a>
+              </li>
 
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="hackathons"
+              >
+                <a href="https://github.com/FOSSDorm" target="_blank">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
 
-                  <img src="./assets/images/visionguide.jpeg" alt="orizon" loading="lazy">
-                </figure>
+                    <img
+                      src="./assets/images/fossdorm.png"
+                      alt="orizon"
+                      loading="lazy"
+                    />
+                  </figure>
 
-                <h3 class="project-title">Vision Guide</h3>
+                  <h3 class="project-title">FOSSDorm</h3>
 
-                <p class="project-category">A Handheld IoT device using Raspberry Pi and ML for visually impaired people to carry out daily life activities.</p>
+                  <p class="project-category">
+                    A GNOME Community Engagement Challenge Project that aims to
+                    bring new contributors to the open source community by
+                    identifying projects and teaching users how to contribute
+                    and engage in the long term.
+                  </p>
+                </a>
+              </li>
 
-              </a>
-            </li>
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="achievements"
+              >
+                <a
+                  href="https://www.facebook.com/1453842511589254/posts/1988491724790994/"
+                  target="_blank"
+                >
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
 
-            <li class="project-item  active" data-filter-item data-category="hackathons">
-              <a href="https://github.com/FOSSDorm"  target="_blank">
+                    <img
+                      src="./assets/images/lallantop.png"
+                      alt="orizon"
+                      loading="lazy"
+                    />
+                  </figure>
 
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
+                  <h3 class="project-title">
+                    The Lallantop Kahani Competition 2017
+                  </h3>
 
-                  <img src="./assets/images/fossdorm.png" alt="orizon" loading="lazy">
-                </figure>
+                  <p class="project-category">Top 16 Winner</p>
+                </a>
+              </li>
 
-                <h3 class="project-title">FOSSDorm</h3>
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="achievements"
+              >
+                <a
+                  href="https://www.gnome.org/challenge/winners/#fossdorm"
+                  target="_blank"
+                >
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
 
-                <p class="project-category">A GNOME Community Engagement Challenge Project that aims to bring new contributors to the open source community by identifying projects and teaching users how to contribute and engage in the long term.</p>
+                    <img
+                      src="./assets/images/gnome-challenge.png"
+                      alt="orizon"
+                      loading="lazy"
+                    />
+                  </figure>
 
-              </a>
-            </li>
+                  <h3 class="project-title">
+                    GNOME Community Engagement Challenge 2020
+                  </h3>
 
-            <li class="project-item  active" data-filter-item data-category="achievements">
-              <a href="https://www.facebook.com/1453842511589254/posts/1988491724790994/"  target="_blank">
+                  <p class="project-category">Phase 1 Winner</p>
+                </a>
+              </li>
+            </ul>
+          </section>
+        </article>
 
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/lallantop.png" alt="orizon" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">The Lallantop Kahani Competition 2017</h3>
-
-                <p class="project-category">Top 16 Winner</p>
-
-              </a>
-            </li>
-
-
-            <li class="project-item  active" data-filter-item data-category="achievements">
-              <a href="https://www.gnome.org/challenge/winners/#fossdorm" target="_blank">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/gnome-challenge.png" alt="orizon" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">GNOME Community Engagement Challenge 2020</h3>
-
-                <p class="project-category">Phase 1 Winner</p>
-
-              </a>
-            </li>
-
-          </ul>
-
-        </section>
-
-      </article>
-
-
-
-
-
-      <!--
+        <!--
         - #BLOG
       -->
 
-      <article class="blog" data-page="writings">
+        <article class="blog" data-page="writings">
+          <header>
+            <h2 class="h2 article-title">Writings</h2>
+          </header>
 
-        <header>
-          <h2 class="h2 article-title">Writings</h2>
-        </header>
-
-        <section class="blog-posts">
-
-          <ul class="blog-posts-list">
-
-            <li class="blog-post-item">
-              <a href="https://www.linuxshelltips.com/author/sarru1291/" target="_blank">
-
-                <!-- <figure class="blog-banner-box">
+          <section class="blog-posts">
+            <ul class="blog-posts-list">
+              <li class="blog-post-item">
+                <a
+                  href="https://www.linuxshelltips.com/author/sarru1291/"
+                  target="_blank"
+                >
+                  <!-- <figure class="blog-banner-box">
                   <img src="./assets/images/blog-1.jpg" alt="Linus Shell Tips" loading="lazy">
                 </figure> -->
 
-                <div class="blog-content">
-
-                  <!-- <div class="blog-meta">
+                  <div class="blog-content">
+                    <!-- <div class="blog-meta">
                     <p class="blog-category">Design</p>
 
                     <span class="dot"></span>
@@ -1084,28 +1056,26 @@ multiple Indian languages, timing, content and auto-evaluation to generate exam-
                     <time datetime="2022-02-23">Fab 23, 2022</time>
                   </div> -->
 
-                  <h3 class="h3 blog-item-title">Linux Shell Tips</h3>
+                    <h3 class="h3 blog-item-title">Linux Shell Tips</h3>
 
-                  <!-- <p class="blog-text">
+                    <!-- <p class="blog-text">
                     Veritatis et quasi architecto beatae vitae dicta sunt, explicabo.
                   </p> -->
+                  </div>
+                </a>
+              </li>
 
-                </div>
-
-              </a>
-            </li>
-
-
-            <li class="blog-post-item">
-              <a href="ttps://www.coscreen.co/blog/mob-programming-distributed-teams-guide/" target="_blank">
-
-                <!-- <figure class="blog-banner-box">
+              <li class="blog-post-item">
+                <a
+                  href="ttps://www.coscreen.co/blog/mob-programming-distributed-teams-guide/"
+                  target="_blank"
+                >
+                  <!-- <figure class="blog-banner-box">
                   <img src="./assets/images/blog-1.jpg" alt="Linus Shell Tips" loading="lazy">
                 </figure> -->
 
-                <div class="blog-content">
-
-                  <!-- <div class="blog-meta">
+                  <div class="blog-content">
+                    <!-- <div class="blog-meta">
                     <p class="blog-category">Design</p>
 
                     <span class="dot"></span>
@@ -1113,26 +1083,25 @@ multiple Indian languages, timing, content and auto-evaluation to generate exam-
                     <time datetime="2022-02-23">Fab 23, 2022</time>
                   </div> -->
 
-                  <h3 class="h3 blog-item-title">HitSubscribe</h3>
+                    <h3 class="h3 blog-item-title">HitSubscribe</h3>
 
-                  <!-- <p class="blog-text">
+                    <!-- <p class="blog-text">
                     Veritatis et quasi architecto beatae vitae dicta sunt, explicabo.
                   </p> -->
-
-                </div>
-
-              </a>
-            </li>
-            <li class="blog-post-item">
-              <a href="https://fossbytes.com/author/sarvottam/" target="_blank">
-
-                <!-- <figure class="blog-banner-box">
+                  </div>
+                </a>
+              </li>
+              <li class="blog-post-item">
+                <a
+                  href="https://fossbytes.com/author/sarvottam/"
+                  target="_blank"
+                >
+                  <!-- <figure class="blog-banner-box">
                   <img src="./assets/images/blog-1.jpg" alt="Linus Shell Tips" loading="lazy">
                 </figure> -->
 
-                <div class="blog-content">
-
-                  <!-- <div class="blog-meta">
+                  <div class="blog-content">
+                    <!-- <div class="blog-meta">
                     <p class="blog-category">Design</p>
 
                     <span class="dot"></span>
@@ -1140,27 +1109,23 @@ multiple Indian languages, timing, content and auto-evaluation to generate exam-
                     <time datetime="2022-02-23">Fab 23, 2022</time>
                   </div> -->
 
-                  <h3 class="h3 blog-item-title">Fossbytes</h3>
+                    <h3 class="h3 blog-item-title">Fossbytes</h3>
 
-                  <!-- <p class="blog-text">
+                    <!-- <p class="blog-text">
                     Veritatis et quasi architecto beatae vitae dicta sunt, explicabo.
                   </p> -->
+                  </div>
+                </a>
+              </li>
 
-                </div>
-
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="https://itsfoss.com/author/sarvottam/" target="_blank">
-
-                <!-- <figure class="blog-banner-box">
+              <li class="blog-post-item">
+                <a href="https://itsfoss.com/author/sarvottam/" target="_blank">
+                  <!-- <figure class="blog-banner-box">
                   <img src="./assets/images/blog-1.jpg" alt="Linus Shell Tips" loading="lazy">
                 </figure> -->
 
-                <div class="blog-content">
-
-                  <!-- <div class="blog-meta">
+                  <div class="blog-content">
+                    <!-- <div class="blog-meta">
                     <p class="blog-category">Design</p>
 
                     <span class="dot"></span>
@@ -1168,27 +1133,26 @@ multiple Indian languages, timing, content and auto-evaluation to generate exam-
                     <time datetime="2022-02-23">Fab 23, 2022</time>
                   </div> -->
 
-                  <h3 class="h3 blog-item-title">It's FOSS</h3>
+                    <h3 class="h3 blog-item-title">It's FOSS</h3>
 
-                  <!-- <p class="blog-text">
+                    <!-- <p class="blog-text">
                     Veritatis et quasi architecto beatae vitae dicta sunt, explicabo.
                   </p> -->
+                  </div>
+                </a>
+              </li>
 
-                </div>
-
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="https://www.linuxjournal.com/users/sarvottam-kumar" target="_blank">
-
-                <!-- <figure class="blog-banner-box">
+              <li class="blog-post-item">
+                <a
+                  href="https://www.linuxjournal.com/users/sarvottam-kumar"
+                  target="_blank"
+                >
+                  <!-- <figure class="blog-banner-box">
                   <img src="./assets/images/blog-1.jpg" alt="Linus Shell Tips" loading="lazy">
                 </figure> -->
 
-                <div class="blog-content">
-
-                  <!-- <div class="blog-meta">
+                  <div class="blog-content">
+                    <!-- <div class="blog-meta">
                     <p class="blog-category">Design</p>
 
                     <span class="dot"></span>
@@ -1196,44 +1160,35 @@ multiple Indian languages, timing, content and auto-evaluation to generate exam-
                     <time datetime="2022-02-23">Fab 23, 2022</time>
                   </div> -->
 
-                  <h3 class="h3 blog-item-title">Linux Journal</h3>
+                    <h3 class="h3 blog-item-title">Linux Journal</h3>
 
-                  <!-- <p class="blog-text">
+                    <!-- <p class="blog-text">
                     Veritatis et quasi architecto beatae vitae dicta sunt, explicabo.
                   </p> -->
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </section>
+        </article>
+      </div>
+    </main>
 
-                </div>
-
-              </a>
-            </li>
-
-
-          </ul>
-          
-        </section>
-
-      </article>
-
-    </div>
-
-  </main>
-
-
-
-
-
-
-  <!--
+    <!--
     - custom js link
   -->
-  <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/script.js"></script>
 
-  <!--
+    <!--
     - ionicon link
   -->
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
-</body>
-
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
 </html>
